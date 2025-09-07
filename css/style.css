@@ -36,9 +36,10 @@
 .texto {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     Text-align: center; height: 500px;
     padding: 25px;
+    margin-top: 200px;
      
 }
 
