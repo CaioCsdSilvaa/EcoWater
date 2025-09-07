@@ -1,0 +1,52 @@
+
+.texto {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    Text-align: center; height: 500px;
+     
+}
+
+body {
+    
+    margin: 0;
+    height: 200vh;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    margin-top: 300px;
+}
+
+.boximagem {
+    width: 240px;
+    height: 240px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.botao {
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ccc;
+    color: rgb(79, 76, 76);
+    cursor: pointer;
+    margin-top: 150px;
+}
