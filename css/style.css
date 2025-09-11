@@ -3,13 +3,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px, 40px;
-    background-color: #0d19889d;
-    border-radius: 27px;
+    background-color: #f9f9f9b9;
+    border-radius: 50px;
+    
+    margin: 20px auto 0 auto; 
+    width: 90%; 
+    max-width: 1200px; 
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25); 
+    
 }
 .logo h1{
     font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #cfc5c5;
+    color: #11ade6;
     padding-left: 30px;
 }
 
@@ -22,7 +28,7 @@
 
 .menu a{
     text-decoration: none;
-    color: #ddd;
+    color: #11ade6;
     font-size: 1.1rem;
     padding: 5px 10px;
     border-radius: 5px;
@@ -38,11 +44,11 @@
 .texto {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     Text-align: center; height: 500px;
     padding: 25px;
     margin-top: 200px;
-    color: #9e9b9b;
+    color: #3cafdd;
 }
 
 body{
@@ -52,7 +58,7 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/pexels-pixabay-60575\(1\).jpg);
+    background-image: url(/img/city_landscape_and_air_pollution_in_the_city_silhouette_vector_landscape.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,29 +76,66 @@ body{
     align-items: center;
 
 }
-
-.imagens {
+.imagem {
     display: flex;
-    justify-content: center;
-    gap: 160px;
-    margin-top: 200px;
+    justify-content: center; 
+    margin-top: 100px; 
+
 }
 
+
+
 .boximagem {
-    width: 255px;
-    height: 205px;
-    background-color: #ccc;
-    border-radius: 5px;
-    
+    width: 700px;  
+    height: auto;   
+    background-color: transparent; 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.boximagem img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 10px;
+}
+
+.paragrafo-pos-imagem {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #093d50;
 }
 
 .botao {
     padding: 10px 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 10px;
-    background-color: #ccc;
-    color: rgb(79, 76, 76);
+    background-color: #f7f3f3d7;
+    color: rgba(30, 160, 199, 0.699);
     cursor: pointer;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.folha {
+    background: #ffffffd8;          
+    border-radius: 15px;         
+    box-shadow: 0 80px 25px rgba(0,0,0,0.25); 
+    width: 90%;                   
+    max-width: 1200px;         
+    margin: 100px auto;            
+    padding: 10px;                 
+    min-height: 120vh;              
 }
