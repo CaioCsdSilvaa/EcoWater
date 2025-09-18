@@ -1,3 +1,10 @@
+html{
+    height: 100%;
+}
+
+main{ 
+    flex: 1;
+}
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -34,11 +41,6 @@
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
-.menu a:hover{
-    background-color: #8985ac;
-}
-
 
 
 .texto {
@@ -90,7 +92,16 @@ body{
     margin-bottom: 200px;
 }
 
+
+
 .botao:hover {
     transform: scale(1.05);
+    background-color: #cad6df;
 }
 
+#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding: 20px 0;
+}
