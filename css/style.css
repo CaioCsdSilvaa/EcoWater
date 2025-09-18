@@ -72,6 +72,13 @@ body{
     min-height: 200vh;
 }
 
+
+.imagem-principal{
+    background-image: url(/img/Boa\ viagem.jpg);
+    height: 60vh;
+    background-size: cover;
+}
+
 .principal {
     height: 100vh;
     width: 100%;
@@ -80,6 +87,35 @@ body{
     justify-content: space-around;
     align-items: center;
 
+}
+
+aside.menu-lateral {
+    display:block;
+    width: 150px;
+    height: 400px;
+    float: left;
+    background-color: #1DBCD1;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba( 0, 0 , 0, 0.5);
+}
+
+.menu-lateral h3{
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.menu-lateral ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 0;
+    cursor: pointer;
 }
 
 
