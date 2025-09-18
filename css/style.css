@@ -42,6 +42,9 @@ main{
     transition: background-color 0.3s;
 }
 
+.menu a:hover{
+    background-color: #cad6df;
+}
 
 .texto {
     
