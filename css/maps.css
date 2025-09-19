@@ -1,0 +1,129 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 200vh;
+    gap: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+   
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 200vh;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px, 0,  100px, 0;
+    background-color: #f9f9f9b9;
+    border-radius: 15px;
+    
+    margin: 18px auto 0 auto; 
+    width: 90%; 
+    max-width: auto; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25); 
+    
+}
+
+.logo h1{
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #11ade6;
+    padding-left: 30px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #11ade6;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover{
+    background-color: #cad6df;
+}
+
+/*TUDO ISSO É SOBRE A CAIXA ATRÁS E O TEXTO DENTRO DELA*/
+
+.info {
+  background-color: #3cafdd;
+  color: #fff;
+  padding: 25px 5%;
+  text-align: justify;
+  margin-top: 5%;
+
+
+}
+
+
+p1{
+    color: rgb(255, 253, 253);
+    font-size: large;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+.h1{
+    text-align: center;
+}
+
+/* TUDO ISSO TEM REALÇÃO COM OS ITENS E IMAGENS */
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* centralizar e dar espaço */
+  margin: 50px auto;
+  max-width: 1400px;
+}
+
+.container-icones {
+  display: flex;
+  justify-content: space-around; /* Distribui os itens com espaço entre eles */
+  align-items: flex-start; /* todes os itens vão comecar no toppo, como se fosse um ponot inicial, não importa o tamanho */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha se a tela for pequena */
+  padding: 60px 20px; /* Adiciona um espaçamento interno */
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.item {
+  display: flex;
+  flex-direction: column; /* coloca o texto embaixo no icone */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+ text-align: center;
+  width: 18%; /* Define a largura de cada item para que caibam 5 por linha */
+  margin: 0 1%; /* Adiciona um pequeno espaçamento lateral */
+}
+
+.item img {
+  width: 100px; /* Tamanho do ícone */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item p {
+  font-size: 25px;
+  line-height: 1.4;
+  color: #333;
+  text-align: center;
+}
