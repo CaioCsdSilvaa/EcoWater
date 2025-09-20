@@ -6,7 +6,21 @@
     justify-content: space-between;
     align-items: center;
     margin: -10px;
-    height: 27px;
+    height: 50px;
+}
+
+.logo img {
+    width: 90%;
+    max-width: 50px;
+
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: ;
+    margin-right: auto;
+
+    padding: 20px 30px; 
+    border-radius: 0px; 
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
 }
 
 .logo h1 {
@@ -52,6 +66,20 @@
     margin: 0;
 }
 
+.main h3 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: sans-serif;
+    margin: 0.25em 0 0.25em 0;
+    
+}
+
 main p {
     font-family: sans-serif;
     
@@ -64,18 +92,18 @@ main p {
 }
 
 .main  {
-    width: 90%; /* Em telas pequenas (celular), ocupa 90% da largura */
-    max-width: 950px; /* Esta é a regra mais importante! Em telas grandes, a largura NUNCA passará de 800px */
+    width: 90%;
+    max-width: 950px; 
     
-    /* Esta é a segunda regra mais importante: centraliza o contêiner na tela */
-    margin-top: 30px; /* Um espaço no topo */
-    margin-bottom: 30px; /* Um espaço embaixo */
-    margin-left: auto; /* Margem automática à esquerda */
-    margin-right: auto; /* Margem automática à direita */
-    /* A linha acima pode ser escrita de forma abreviada: margin: 30px auto; */
+    
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
 
-    background-color: #ffffff; /* Fundo branco para o conteúdo, criando contraste */
-    padding: 20px 30px; /* Espaçamento interno para o texto não colar nas bordas */
-    border-radius: 0px; /* Bordas arredondadas para um visual mais suave (opcional) */
+    background-color: #ffffff; 
+    padding: 20px 30px; 
+    border-radius: 0px; 
     box-shadow: 0 0px 0px rgb(255, 255, 255);
 }
