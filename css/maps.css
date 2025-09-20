@@ -19,6 +19,11 @@ body{
     min-height: 200vh;
 }
 
+
+
+
+
+
 .header {
   background-color: #2e53a3; /* Azul escuro */
   color: #ffffff; /* Branco para o texto */
@@ -52,6 +57,8 @@ body{
     color: #11ade6;
     padding-left: 30px;
 }
+
+
 
 .menu ul{
     list-style: none;
