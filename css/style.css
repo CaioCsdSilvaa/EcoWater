@@ -109,12 +109,6 @@ body{
     background-color: #97b9d3;
 }
 
-#rodape{
-    clear: both;
-    border-top: 1px solid #606060;
-    text-align: center;
-    padding: 20px 0;
-}
 
 .centro-pagina {
     font-size: 50px;
@@ -172,3 +166,38 @@ h1 .titulo{
 
 
 
+#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2a65b8;
+}
+
+.logo-footer{
+    width: 100px;
+    max-width: 150px;
+    padding-top: 23px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin-top: -15px; 
+    margin-bottom: 0px; 
+    margin-left: 25px; 
+}
+
+.icons-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-footer li{
+    margin-left: 15px;
+}
+
+.icons-footer img {
+    width: 30px; 
+    height: auto;
+}
