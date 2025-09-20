@@ -160,14 +160,21 @@ aside.menu-lateral {
 }
 
 .centro-pagina {
-    font-size: 50px;
-    text-align: center;
+    font-size: 40px;
+
+    width: 90%;
+    max-width: 950px; 
+    
+    
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+
+    background-color: #ffffff; 
+    padding: 20px 30px; 
+    border-radius: 0px; 
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
 }
 
-#paragrafo {
-    max-width: 1000px; /* Limita a largura do parágrafo para melhor leitura */
-    margin: 90px auto; /* Centraliza o parágrafo na página */
-    text-align: justify; /* Alinha o texto em ambas as margens */
-    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
-    margin-left: 690px;
-}
