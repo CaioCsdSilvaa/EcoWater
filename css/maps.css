@@ -36,12 +36,16 @@ body{
     box-shadow: 0 2px 10px rgba(0,0,0,0.25);
   }
   
+  .logo{
+    display: flex;
+  }
 
   .logo h1{
       font-size: 2em;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: hsl(0, 0%, 100%);
-      padding-left: 30px;
+      padding-left: 10px;
+    
   }
   
   .menu ul{
@@ -52,6 +56,7 @@ body{
     
 }
 
+
 .menu a{
     text-decoration: none;
     color: white;
@@ -59,10 +64,12 @@ body{
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .menu a:hover{
-    background-color: #cad6df;
+    background-color: #08385d;
 }
 
 .logo-container {
@@ -77,6 +84,9 @@ body{
   border-radius: 8px; /* Adiciona o canto arredondado da imagem */
   background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo semi-transparente para o quadrado */
   padding: 5px; /* Espaço interno para a imagem */
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: px;
 }
 
 .logo-text {
@@ -88,9 +98,10 @@ body{
 /*imagem em cima do texto auxiliar */
 .imagem-principal{
     background-image: url(/img/boa-viagem-recife-pe.jpg);
-    height: 500px;
+    height: 1000px;
     background-size: cover;
     background-position: center 40%;
+    
 }
 
 /*TUDO ISSO É SOBRE A CAIXA ATRÁS E O TEXTO DENTRO DELA*/
@@ -102,8 +113,24 @@ body{
   text-align: justify;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  
 }
 
+.maintx {
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  margin-right: 100px;
+  
+}
+
+.info-img{
+  height: 400px;
+  border-radius: 50px;
+  
+  
+}
 
 .h1{
     text-align: center;
