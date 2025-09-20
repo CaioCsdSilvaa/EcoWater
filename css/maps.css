@@ -58,47 +58,22 @@ body{
     padding-left: 30px;
 }
 
-
-
-.menu ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding-right: 30px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #11ade6;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.menu a:hover{
-    background-color: #cad6df;
+/*imagem em cima do texto auxiliar */
+.imagem-principal{
+    background-image: url(/img/chris-leboutillier-TUJud0AWAPI-unsplash-scaled-1.jpg);
+    height: 40vh;
+    background-size: cover;
 }
 
 /*TUDO ISSO É SOBRE A CAIXA ATRÁS E O TEXTO DENTRO DELA*/
 
 .info {
-  background-color: #3cafdd;
+  background-color: #2e53a3;
   color: #fff;
   padding: 25px 5%;
   text-align: justify;
-  margin-top: 5%;
-
-
 }
 
-
-p1{
-    color: rgb(255, 253, 253);
-    font-size: large;
-    line-height: 1.5;
-    font-size: 25px;
-}
 
 .h1{
     text-align: center;
