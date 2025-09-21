@@ -72,39 +72,6 @@ main{
     height: 60vh;
     background-size: cover;
 }
- 
-.principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    margin-left: auto;
-    margin-right: 300px; 
-}
-
-.botao {
-    padding: 10px 10px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 15px;
-    background-color: #6a92c4;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 50px;
-    margin-bottom: 110px;
-    margin-left: 320px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, backgorund-color 0.3s ease;
-    text-decoration: none;
-}
-
-.botao:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px #fff;
-    background-color: #97b9d3;
-}
 
 .botao:active {
     transform: translateY(0); 
