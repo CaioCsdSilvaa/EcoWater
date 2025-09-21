@@ -34,13 +34,13 @@ body {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin-right: 1000px;
 }
 
 .logo img {
     height: 40px;
+    
+
     
 }
 
@@ -81,13 +81,15 @@ body {
     max-height: 400px;
     overflow: hidden;
     
+    
+    
 }
 
 .hero-image {
     width: 100%;
     height: auto;
     display: block;
-    
+    height: 700px;
 }
 
 .faixa-azul {
@@ -162,6 +164,10 @@ body {
     margin: 0;
     font-size: 1em;
     font-weight: 500;
+}
+
+.pula{
+    height: 150px;
 }
 
 /* --- Rodapé (Footer) --- */
