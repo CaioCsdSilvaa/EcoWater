@@ -1,0 +1,216 @@
+/* Estilos globais e fontes */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* --- Cabeçalho (Header) --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #2b43dd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    
+}
+
+.logo span {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    width: 150px;
+}
+
+.search-button {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-button img {
+    height: 20px;
+}
+
+/* --- Seção da Imagem Principal (Hero) --- */
+.hero-image-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+
+
+/* --- Seção de Informações (Info) --- */
+.info-section {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.info-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+
+
+
+/* --- Seção dos Cards --- */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* --- Rodapé (Footer) --- */
+.main-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-footer img {
+    height: 30px;
+}
+
+
+.social-icons a img {
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .main-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
