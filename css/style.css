@@ -33,17 +33,10 @@ header {
     background-color: #1f58a8;
 }
 
-#img-logo{
-    width: 100%;
-    max-width: 150px;
-    position: absolute;
-    padding-top: -30px;
-    padding-right: 25px;
-    padding-left: 25px;
-
-    margin-top: -15px; 
-    margin-bottom: 0px; 
-    margin-left: 25px; 
+#img-logo {
+    width: 150px; 
+    height: auto;
+    padding: 0 25px; 
 }
 
 
@@ -59,19 +52,20 @@ header {
 
 body{
     margin: 0;
-    height: 200vh;
-    gap: 50px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh; 
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    min-height: 200vh;
 }
+
+main{
+    flex: 1;
+}
+
 
 .imagem-principal{
     background-image: url(/img/Boa\ viagem.jpg);
@@ -96,17 +90,25 @@ body{
     border: none;
     border-radius: 15px;
     background-color: #6a92c4;
-    color: rgba(3, 3, 3, 0.699);
+    color: #fff;
     cursor: pointer;
     margin-top: 50px;
-    margin-bottom: 1110px;
+    margin-bottom: 110px;
     margin-left: 320px;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, backgorund-color 0.3s ease;
+    text-decoration: none;
 }
 
 .botao:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 10px #fff;
     background-color: #97b9d3;
+}
+
+.botao:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -153,6 +155,8 @@ h1 .titulo{
     display: flex;
     justify-content: center;
     padding: 15px 0; 
+    border-bottom: 2px solid #3d6aae;
+    height: 30px;
 }
 
 .novo-menu ul {
@@ -170,35 +174,38 @@ h1 .titulo{
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: 0.3s;
+    position: relative;
+    transition: color 0.3s ease;
+
 }
 
 .novo-menu a:hover {
     background-color: rgba(163, 207, 228, 0.2);
 }
 
-
-
-
-
 #rodape{
-    clear: both;
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid #606060;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 30px;
     background-color: #2a65b8;
+}
+
+#rodape p {
+    color: #ffffff; 
+    margin: 0; 
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
 }
 
 .logo-footer{
     width: 100px;
+    height: auto;
     max-width: 150px;
-    padding-top: 23px;
-    padding-right: 25px;
-    padding-left: 25px;
-
-    margin-top: -15px; 
-    margin-bottom: 0px; 
-    margin-left: 25px; 
+    padding: 7px;
+ 
 }
 
 .icons-footer{
@@ -206,13 +213,15 @@ h1 .titulo{
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 15px;
 }
 
 .icons-footer li{
-    margin-left: 15px;
+    margin-left: 0;
 }
 
 .icons-footer img {
-    width: 30px; 
+    width: 25px; 
     height: auto;
+    padding: 3px;
 }
