@@ -28,7 +28,33 @@ header {
 
 body {
     margin: 0px;
+
 }
+
+
+.conteudo {
+    margin-bottom: 150px;
+}
+
+#titulo {
+    text-align: center;
+    margin: 110px;
+    font-size: 50px;
+    color: #112a4d;
+}
+
+.caixas {
+    background-color: #f1f2f2;
+    color: #112a4d;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 10px;
+    
+}
+
 
 #rodape{
     display: flex;
