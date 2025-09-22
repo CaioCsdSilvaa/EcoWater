@@ -60,6 +60,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    scroll-behavior: smooth;
 }
 
 .imagem-principal{
