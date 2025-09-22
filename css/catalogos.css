@@ -28,6 +28,7 @@ header {
 
 body {
     margin: 0px;
+
 }
 
 
@@ -35,16 +36,31 @@ body {
     margin-bottom: 150px;
 }
 
+img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
 #titulo {
     text-align: center;
     margin: 110px;
     font-size: 50px;
     color: #112a4d;
+    
+
+}
+
+.imagemtexto {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-left: 20px;
 }
 
 .caixas {
     background-color: #f1f2f2;
-    color: #112a4d;
+    color: #1c62c4;
     
     padding: 20px;
     margin-bottom: 20px;
@@ -54,6 +70,10 @@ body {
     
 }
 
+.caixas h2 {
+    color: #112a4d;
+    
+}
 
 #rodape{
     display: flex;
