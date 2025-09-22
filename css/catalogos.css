@@ -64,15 +64,21 @@ img {
     
     padding: 20px;
     margin-bottom: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
-    border-radius: 10px;
-    
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px; 
 }
 
 .caixas h2 {
     color: #112a4d;
-    
+}
+
+.caixas ul{
+    padding-left: 80px;
+}
+
+.caixas li{
+    margin-bottom: 8px;
 }
 
 #rodape{
