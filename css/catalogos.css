@@ -9,6 +9,12 @@ header {
     height: 70px;
 }
 
+body{
+    margin: 0;
+    min-height: 100vh; 
+    background-size: 100%;
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -22,15 +28,9 @@ header {
 }
 
 .logo img {
-    width: 90%;
+    width: 100%;
     max-width: 150px
 }
-
-body {
-    margin: 0px;
-
-}
-
 
 .conteudo {
     margin-bottom: 150px;
@@ -75,11 +75,24 @@ img {
 
 .caixas ul{
     padding-left: 80px;
+    margin: 0;
 }
 
 .caixas li{
-    margin-bottom: 8px;
+    margin-bottom: 7px;
+    cursor: pointer;
 }
+
+.caixas li:hover{
+    color: #2289ce;
+    text-decoration: underline;
+}
+
+.caixas li a{
+    text-decoration: none;
+    color: #1c62c4;
+}
+
 
 #rodape{
     display: flex;
