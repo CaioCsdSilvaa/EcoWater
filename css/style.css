@@ -1,5 +1,6 @@
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 main{ 
@@ -86,13 +87,12 @@ main{
     max-width: 950px; 
     
     
-    margin-top: 30px; 
+    margin-top: -40px; 
     margin-bottom: 30px; 
     margin-left: auto; 
     margin-right: auto; 
     
 
-    background-color: #ffffff; 
     padding: 20px 30px; 
     border-radius: 0px; 
     box-shadow: 0 0px 0px rgb(255, 255, 255);
@@ -101,20 +101,6 @@ main{
 h1 .titulo{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
-}
-
-.centro-pagina {
-    font-size: 40px;
-    width: 90%;
-    max-width: 950px; 
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    background-color: #ffffff; 
-    padding: 20px 30px; 
-    border-radius: 0px; 
-    box-shadow: 0 0px 0px rgb(255, 255, 255);
 }
 
 .novo-menu {

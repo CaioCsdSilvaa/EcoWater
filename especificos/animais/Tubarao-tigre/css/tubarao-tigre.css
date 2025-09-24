@@ -28,6 +28,37 @@ header {
     max-width: 150px
 }
 
+/**/
+
+body {
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    position: fixed;
+    font-size: 1rem;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.sidebar-titulo {
+    position: fixed;
+    font-family: sans-serif;
+    margin-top: 40px
+}
+
+.sidebar-links{
+    position: fixed;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+
 
 /* CSS do Tópico Inicial */
 
@@ -64,32 +95,9 @@ header {
 /* CSS do Tópico "Dentes" e "Visão" */
 
 
-.dentes-info {
-    display: flex; 
-    gap: 30px;
-    flex-direction: row;
-}
-
-.texto-dentes-visao-info {
-    flex: 1;
-}
-
-.img-dentes-container {
+.anatomia-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.img-dentes {
-    display: block;
-    width: 200px; 
-    height: auto; 
-    border-radius: 8px;
-}
-
-.descricao-dentes-imagem {
-    align-items: center;
-    max-width: 60ch;
+    flex-direction: row-reverse;
 }
 
 
@@ -119,17 +127,12 @@ header {
     display: flex;
     font-size: 1.15em;
     font-weight: bold;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
     font-family: sans-serif;
     margin: 0.25em 0 0.25em 0;
     
 }
 
-main p {
+.main p {
     font-family: sans-serif;
     
     display: block;
@@ -138,7 +141,7 @@ main p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-
+    justify-content: space-between;
 }
 
 .main {
