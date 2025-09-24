@@ -28,7 +28,7 @@ header {
     max-width: 150px
 }
 
-/**/
+/* Sidebar */
 
 body {
     scroll-behavior: smooth;
@@ -37,7 +37,7 @@ body {
 .sidebar {
     position: fixed;
     font-size: 1rem;
-    margin-left: 200px;
+    margin-left: 160px;
     margin-top: 20px;
     width: 90%;
 }
@@ -45,7 +45,7 @@ body {
 .sidebar-titulo {
     position: fixed;
     font-family: sans-serif;
-    margin-top: 40px
+    margin-top: 40px;
 }
 
 .sidebar-links{
@@ -53,51 +53,80 @@ body {
     display: flex;
     font-family: sans-serif;
     flex-direction: column;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-top: 70px;
+    max-width: 1000px;
+    width: 160px;
     gap: 10px;
 }
-
 
 
 /* CSS do Tópico Inicial */
 
 
-.animal-info {
-    display: flex;
-    gap: 30px;
-    flex-direction: row-reverse;
+.img-tartaruga-container {
+  float: right; 
+  margin-left: 30px; 
+  margin-bottom: 15px; 
+  width: 430px; 
 }
 
-.texto-info {
-    flex: 1;
-}
-
-.img-tubarao-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.img-tubarao {
-    display: block;
-    width: 350px; 
-    height: auto; 
-    border-radius: 8px;
+.img-tartaruga {
+  display: block;
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
 }
 
 .descricao-imagem {
-    align-items: center;
-    max-width: 60ch;
+  text-align: right; 
+  max-width: 100; 
 }
 
 
-/* CSS do Tópico "Dentes" e "Visão" */
+/* ANATOMIA  */
 
 
-.anatomia-info {
-    display: flex;
-    flex-direction: row-reverse;
+.img-anatomia-container {
+  float: right; 
+  margin-left: 30px; 
+  margin-bottom: 15px; 
+  width: 350px; 
+}
+
+.img-anatomia {
+  display: block;
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.descricao-anatomia {
+  text-align: center; 
+  max-width: 100; 
+}
+
+
+/* CARAPAÇA */
+
+
+.img-carapaca-container {
+  float: left; 
+  margin-left: 30px; 
+  margin-bottom: 15px; 
+  width: 350px; 
+}
+
+.img-carapaca {
+  display: block;
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.descricao-carapaca {
+  text-align: center; 
+  max-width: 5; 
 }
 
 
@@ -107,7 +136,7 @@ body {
 .main h1 {
     display: flex;
     font-family: 'Linux Libertine','Georgia','Times','Source Serif 4',serif;
-    font-size: 1.85rem;
+    font-size: 2.3rem;
     line-height: 1.375;
     font-weight: normal;
     margin: 0;
@@ -117,7 +146,7 @@ body {
 .main h2 {
     display: flex;
     font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.375;
     font-weight: normal;
     margin: 0;
@@ -125,28 +154,35 @@ body {
 
 .main h3 {
     display: flex;
-    font-size: 1.15em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: sans-serif;
     margin: 0.25em 0 0.25em 0;
-    
+}
+
+.main h4 {
+    display: flex;
+    font-size: 1.35em;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0.25em 0 0.25em 0;
 }
 
 .main p {
     font-family: sans-serif;
-    
+    font-size: 1.3rem;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-    justify-content: space-between;
+    word-spacing: 0.1rem;
 }
 
 .main {
     width: 90%;
-    max-width: 950px; 
+    max-width: 1155px; 
     
     
     margin-top: 30px; 
@@ -161,43 +197,7 @@ body {
     box-shadow: 0 0px 0px rgb(255, 255, 255);
 }
 
-
-
-    .indice-container {
-            width: 280px;
-            border: 1px solid #a2a9b1;
-            padding: 15px;
-            background-color: #f8f9fa;
-        }
-
-
-        .indice-header {
-            display: flex;
-            justify-content: space-between; /* Coloca os itens nas extremidades */
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .indice-titulo {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .indice-toggle {
-            font-size: 0.9em;
-            color: #0645ad;
-            text-decoration: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        .indice-toggle:hover {
-            text-decoration: underline;
-        }
-
-
-        /* Rodapé */
-
+/* Rodapé */
 
 #rodape{
     display: flex;
@@ -214,6 +214,38 @@ body {
     flex-grow: 1;
     text-align: center;
     padding: 10px;
+}
+
+.indice-container {
+    width: 280px;
+    border: 1px solid #a2a9b1;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+
+.indice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.indice-titulo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.indice-toggle {
+    font-size: 0.9em;
+    color: #0645ad;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.indice-toggle:hover {
+    text-decoration: underline;
 }
 
 .logo-footer{
