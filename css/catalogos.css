@@ -34,6 +34,8 @@ body{
 
 .conteudo {
     margin-bottom: 150px;
+    padding: 50px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -44,11 +46,20 @@ img {
 
 #titulo {
     text-align: center;
-    margin: 110px;
+    margin: 110px 0 20px 0; 
     font-size: 50px;
     color: #112a4d;
-    
+    position: relative;
+    margin-bottom: 50px;
+}
 
+#titulo::after {
+    content: '';
+    display: block; 
+    width: 550px; 
+    height: 2px;
+    background-color: #1c62c4; 
+    margin: 10px auto 0;
 }
 
 .imagemtexto {
@@ -58,10 +69,8 @@ img {
     margin-left: 20px;
 }
 
-
-
 .caixas {
-    background-color: #f1f2f2;
+    background-color: #e7f0fa;
     color: #1c62c4;
     
     padding: 20px;
@@ -69,6 +78,11 @@ img {
     margin-left: 200px;
     margin-right: 200px;
     border-radius: 10px; 
+    box-shadow: 10px 5px 5px rgb(232, 229, 229);
+}
+
+.links {
+    font-size: 20px;
 }
 
 .caixas h2 {
