@@ -32,14 +32,14 @@ header {
 /* CSS do Tópico Inicial */
 
 
-.img-tartaruga-container {
+.img-tubarao-martelo-container {
   float: right; 
   margin-left: 30px; 
   margin-bottom: 15px; 
   width: 430px; 
 }
 
-.img-tartaruga {
+.img-tubarao-martelo {
   display: block;
   width: 100%; 
   height: auto;
@@ -47,54 +47,31 @@ header {
 }
 
 .descricao-imagem {
-  text-align: right; 
+  text-align: center; 
   max-width: 100; 
 }
 
 
-/* ANATOMIA  */
+/* Caracteristicas  */
 
 
-.img-anatomia-container {
+.img-costa-rica-container {
   float: right; 
   margin-left: 30px; 
   margin-bottom: 15px; 
-  width: 350px; 
+  width: 320px; 
 }
 
-.img-anatomia {
+.img-costa-rica {
   display: block;
   width: 100%; 
   height: auto;
   border-radius: 8px;
 }
 
-.descricao-anatomia {
+.descricao-costa-rica {
   text-align: center; 
   max-width: 100; 
-}
-
-
-/* CARAPAÇA */
-
-
-.img-carapaca-container {
-  float: left; 
-  margin-right: 30px; 
-  margin-bottom: 15px; 
-  width: 350px; 
-}
-
-.img-carapaca {
-  display: block;
-  width: 100%; 
-  height: auto;
-  border-radius: 8px;
-}
-
-.descricao-carapaca {
-  text-align: center; 
-  max-width: 5; 
 }
 
 
@@ -146,6 +123,12 @@ header {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     word-spacing: 0.1rem;
+}
+
+.main li {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
 }
 
 .main {
