@@ -9,6 +9,12 @@ header {
     height: 70px;
 }
 
+body{
+    margin: 0;
+    min-height: 100vh; 
+    background-size: 100%;
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -22,13 +28,77 @@ header {
 }
 
 .logo img {
-    width: 90%;
+    width: 100%;
     max-width: 150px
 }
 
-body {
-    margin: 0px;
+.conteudo {
+    margin-bottom: 150px;
 }
+
+img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+#titulo {
+    text-align: center;
+    margin: 110px;
+    font-size: 50px;
+    color: #112a4d;
+    
+
+}
+
+.imagemtexto {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+
+
+.caixas {
+    background-color: #f1f2f2;
+    color: #1c62c4;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px; 
+}
+
+.caixas h2 {
+    color: #112a4d;
+}
+
+.caixas ul{
+    padding-left: 80px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 20px;
+}
+
+.caixas li{
+    margin-bottom: 7px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.caixas li:hover{
+    color: #2289ce;
+    text-decoration: underline;
+}
+
+.caixas li a{
+    text-decoration: none;
+    color: #1c62c4;
+}
+
 
 #rodape{
     display: flex;

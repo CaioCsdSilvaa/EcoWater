@@ -61,12 +61,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    scroll-behavior: smooth;
 }
-
-main{
-    flex: 1;
-}
-
 
 .imagem-principal{
     background-image: url(/img/Boa\ viagem.jpg);
@@ -74,10 +70,7 @@ main{
     background-size: cover;
 }
 
-.botao:active {
-    transform: translateY(0); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-}
+
 
 
 .centro-pagina {
