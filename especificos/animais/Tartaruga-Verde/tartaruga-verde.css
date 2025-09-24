@@ -28,38 +28,6 @@ header {
     max-width: 150px
 }
 
-/* Sidebar */
-
-body {
-    scroll-behavior: smooth;
-}
-
-.sidebar {
-    position: fixed;
-    font-size: 1rem;
-    margin-left: 160px;
-    margin-top: 20px;
-    width: 90%;
-}
-
-.sidebar-titulo {
-    position: fixed;
-    font-family: sans-serif;
-    margin-top: 40px;
-}
-
-.sidebar-links{
-    position: fixed;
-    display: flex;
-    font-family: sans-serif;
-    flex-direction: column;
-    font-size: 1.1rem;
-    margin-top: 70px;
-    max-width: 1000px;
-    width: 160px;
-    gap: 10px;
-}
-
 
 /* CSS do Tópico Inicial */
 
