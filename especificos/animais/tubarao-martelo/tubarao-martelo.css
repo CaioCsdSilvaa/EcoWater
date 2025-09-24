@@ -1,0 +1,226 @@
+/* Cabeçalho */
+
+header {
+    margin: -8px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100px;         
+    background-color: #2a65b8; 
+    position: relative;
+    height: 70px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;              
+  align-items: center;
+  text-decoration: none;
+  color: white; 
+    
+}
+
+.logo img {
+    width: 90%;
+    max-width: 150px
+}
+
+
+/* CSS do Tópico Inicial */
+
+
+.img-tubarao-martelo-container {
+  float: right; 
+  margin-left: 30px; 
+  margin-bottom: 15px; 
+  width: 430px; 
+}
+
+.img-tubarao-martelo {
+  display: block;
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.descricao-imagem {
+  text-align: center; 
+  max-width: 100; 
+}
+
+
+/* Caracteristicas  */
+
+
+.img-costa-rica-container {
+  float: right; 
+  margin-left: 30px; 
+  margin-bottom: 15px; 
+  width: 320px; 
+}
+
+.img-costa-rica {
+  display: block;
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.descricao-costa-rica {
+  text-align: center; 
+  max-width: 100; 
+}
+
+
+/* Formatação principal */
+
+
+.main h1 {
+    display: flex;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif 4',serif;
+    font-size: 2.3rem;
+    line-height: 1.375;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.main h2 {
+    display: flex;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;
+    font-size: 2rem;
+    line-height: 1.375;
+    font-weight: normal;
+    margin: 0;
+}
+
+.main h3 {
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0.25em 0 0.25em 0;
+}
+
+.main h4 {
+    display: flex;
+    font-size: 1.35em;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0.25em 0 0.25em 0;
+}
+
+.main p {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    word-spacing: 0.1rem;
+}
+
+.main li {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.main {
+    width: 90%;
+    max-width: 1100px; 
+    
+    
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+
+    background-color: #ffffff; 
+    padding: 20px 30px; 
+    border-radius: 0px; 
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
+}
+
+/* Rodapé */
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #2a65b8;
+    margin: -8px;
+}
+
+#rodape p {
+    color: #ffffff;  
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.indice-container {
+    width: 280px;
+    border: 1px solid #a2a9b1;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+
+.indice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.indice-titulo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.indice-toggle {
+    font-size: 0.9em;
+    color: #0645ad;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.indice-toggle:hover {
+    text-decoration: underline;
+}
+
+.logo-footer{
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+    padding: 7px;
+ 
+}
+
+.icons-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.icons-footer li{
+    margin-left: 0;
+}
+
+.icons-footer img {
+    width: 25px; 
+    height: auto;
+    padding: 3px;
+}
