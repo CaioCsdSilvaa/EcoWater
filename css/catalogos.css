@@ -58,6 +58,8 @@ img {
     margin-left: 20px;
 }
 
+
+
 .caixas {
     background-color: #f1f2f2;
     color: #1c62c4;
@@ -76,11 +78,15 @@ img {
 .caixas ul{
     padding-left: 80px;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 20px;
 }
 
 .caixas li{
     margin-bottom: 7px;
     cursor: pointer;
+    margin: 10px;
 }
 
 .caixas li:hover{
