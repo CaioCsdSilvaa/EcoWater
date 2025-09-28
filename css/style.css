@@ -25,6 +25,36 @@ main{
     transform: translateX(-50%); 
 }
 
+#headerLinks {
+    display: flex;
+    gap: 30px; 
+    margin-right: 30px; 
+}
+
+#headerLinks a {
+    color: white; 
+    font-size: 1.1rem; 
+    font-weight: 500;
+    text-decoration: none; 
+    transition: 0.3s ease;
+    font-family: "Alan-Sans",  sans-serif;
+    padding-top: 50px;
+}
+
+#barra {
+    color: white; 
+    font-size: 1.1rem; 
+    font-weight: 500;
+    text-decoration: none; 
+    transition: 0.3s ease;
+    font-family: "Alan-Sans",  sans-serif;
+    padding-bottom: 50px;
+}
+
+#barra {
+    height: 50px;
+}
+
 header {
     margin: -8px;
     display: flex;
