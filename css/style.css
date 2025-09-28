@@ -38,7 +38,9 @@ main{
     text-decoration: none; 
     transition: 0.3s ease;
     font-family: "Alan-Sans",  sans-serif;
-    padding-top: 50px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
 }
 
 #barra {
@@ -48,7 +50,7 @@ main{
     text-decoration: none; 
     transition: 0.3s ease;
     font-family: "Alan-Sans",  sans-serif;
-    padding-bottom: 50px;
+    align-items: center;
 }
 
 #barra {
