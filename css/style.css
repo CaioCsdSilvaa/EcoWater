@@ -70,9 +70,6 @@ body{
     background-size: cover;
 }
 
-
-
-
 .centro-pagina {
     font-size: 40px;
 
@@ -89,11 +86,12 @@ body{
     padding: 20px 30px; 
     border-radius: 0px; 
     box-shadow: 0 0px 0px rgb(255, 255, 255);
+    
 }
 
-h1 .titulo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1 {
     text-align: justify;
+
 }
 
 .novo-menu {

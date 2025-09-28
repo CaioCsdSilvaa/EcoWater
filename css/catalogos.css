@@ -7,6 +7,8 @@ header {
     background-color: #2a65b8; 
     position: relative;
     height: 70px;
+    margin-bottom: -100px;
+    padding-bottom: 50px;
 }
 
 body{
@@ -51,6 +53,7 @@ img {
     color: #112a4d;
     position: relative;
     margin-bottom: 50px;
+    font-family: "Alan Sans", sans-serif;
 }
 
 #titulo::after {
@@ -79,10 +82,12 @@ img {
     margin-right: 200px;
     border-radius: 10px; 
     box-shadow: 10px 5px 5px rgb(232, 229, 229);
+    font-family: "Open-Sans", sans-serif;;
 }
 
 .links {
     font-size: 20px;
+    font-family: "SUSE Mono", sans-serif;
 }
 
 .caixas h2 {
