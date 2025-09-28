@@ -91,41 +91,65 @@ body{
 
 h1 {
     text-align: justify;
-
 }
 
 .novo-menu {
-    background-color: #527ec8;
+    background-color: #2a65b8;
     display: flex;
     justify-content: center;
-    padding: 15px 0; 
-    border-bottom: 2px solid #3d6aae;
-    height: 30px;
+    padding: 1px 0; 
+    border-bottom: 17px solid #3d6aae;
 }
 
-.novo-menu ul {
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    gap: 40px; 
+
+
+/*Botões de direcionamento*/
+
+.botões{
+    display: flex;
+    justify-content: center;
+    align-items:25px;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 40px;
 }
 
-.novo-menu a {
-    text-decoration: none;
-    color: white; 
-    font-size: 1.1rem;
+.botões button{
+    background-color:#e7e9eb;
+    border: 1px solid #e3e6e9;
+    border-radius: 12px;
+    padding: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #120b3f;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    position: relative;
-    transition: color 0.3s ease;
-
 }
 
-.novo-menu a:hover {
-    background-color: rgba(163, 207, 228, 0.2);
+.botões button:hover{
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
 }
+
+a:visited{
+    color: #120b3f;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.botões img{
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: -7px;
+}
+  
 
 #rodape{
     display: flex;
