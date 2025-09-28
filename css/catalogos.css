@@ -18,6 +18,7 @@ body{
     background-size: 100%;
     background-image: url(/img/sl_031520_28970_04.jpg);
     background-size: 120%;
+    background-repeat: no-repeat;
 }
 
 .logo {
