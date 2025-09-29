@@ -37,8 +37,6 @@ body{
 
     background-size: 100%;
     background-image: url(/img/sl_031520_28970_04.jpg);
-    background-repeat: no-repeat;
-
 }
 
 main{
@@ -59,6 +57,10 @@ main{
     margin: 25px;
 }
 
+h1{
+    font-family: "Alan-Sans", sans-serif;
+}
+
 
 .campo {
     margin-bottom: 20px;
@@ -70,6 +72,7 @@ main{
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
+    font-family: "Open-Sans", sans-serif;
 }
 
 .campo input,
@@ -100,6 +103,7 @@ button[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: "SUSE Mono", sans-serif;
 }
 
 button[type="submit"]:hover {
