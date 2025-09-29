@@ -37,7 +37,7 @@ main{
     font-weight: 500;
     text-decoration: none; 
     transition: 0.3s ease;
-    font-family: "Alan-Sans",  sans-serif;
+    font-family: "SUSE Mono", sans-serif;
     padding-top: 0;
     display: flex;
     align-items: center;
@@ -72,16 +72,6 @@ header {
     padding: 0 25px; 
 }
 
-
-.texto {
-    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5rem;
-    Text-align: center; height: 500px;
-    padding: 25px;
-    margin-top: 200px;
-    color: #3cafdd;
-}
 
 body{
     margin: 0;
@@ -121,9 +111,19 @@ body{
     
 }
 
-h1 {
-    text-align: justify;
+#titulo{
+    font-family: "Alan Sans", sans-serif;
+    letter-spacing: -3px;
 }
+
+#paragrafo {
+    font-family: "Open-Sans", sans-serif;
+}
+
+a{
+    font-family: "SUSE Mono", sans-serif;
+}
+
 
 .novo-menu {
     background-color: #2a65b8;
