@@ -144,8 +144,15 @@ body{
     letter-spacing: -3px;
 }
 
+
 #paragrafo {
     font-family: "Open-Sans", sans-serif;
+    text-indent: 15px;
+    text-align:initial;
+}
+
+#paragrafo p{
+    font-size: large;
 }
 
 a{
