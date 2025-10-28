@@ -20,7 +20,12 @@
             <h1>Contato</h1>
             <p>Reservamos esse espaço para que você fale com a equipe do EcoWater. Envie as suas sugestões, dúvidas, críticas ou elogios. Ademais, caso queira fazer uma denúncia ou report, confirme no checkbox abaixo.</p>
 
-            <form action="/contato.html" method="post" id="contato">
+            <form action="/contato.html" method="post" id="contatoForm">
+
+                <div class="check">
+                    <label for="isReport">Quero fazer uma denúncia </label>
+                    <input type="checkbox" id="isReport">
+                </div>
                 <div class="dadosGerais">
                     <label>
                     Nome
@@ -29,12 +34,12 @@
                     <input type="text" name="nome" required value autocomplete="off" >
                 </label>
                 </div>
-                <div class="dadosEspecificos">
-                    <label>
+                <div class="dadosEspecificos" id="cpf-container">
+                    <label for="cpf">
                         CPF
                         <i>(Obrigatório para denúncias)</i>
                         <br>
-                        <input type="text" name="cpf" required value autocomplete="off" placeholder="Ex.: 123.456.789-00">
+                        <input type="text" name="cpf" value autocomplete="off" placeholder="Ex.: 123.456.789-00">
                     </label>
                 </div>
                 <div class="dadosGerais">
@@ -98,5 +103,7 @@
             </li>
          </ul>
     </footer>
+
+    <script src="scripts/contato.js"></script>
 </body>
 </html>
