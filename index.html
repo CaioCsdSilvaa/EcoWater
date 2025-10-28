@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +35,27 @@
             <a href="catalogos.html#direcionamento03" class="link-com-hover">
             <img src="img/ongs.png">
             <span class="texto-hover">ONGs</span></a>
-           
-            <a href="catalogos.html#direcionamento04"><img src="/img/barras.png" alt="barras" id="barra"></a>
+
+           <nav class="hamburguer-nav">
+                <div class="hamburguer" id="hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>    
+            </nav>
         </section>
 
     </header>
 
+    <div class="overlay" id="overlay"></div>
+    <div class="menu" id="menu">
+        <nav class="menu-content">
+                <a href="#" class="menu-item">Inicio </a>
+                <a href="#" class="menu-item">Sobre nos</a>
+                <a href="#" class="menu-item">Contato</a>
+        </nav>
+    </div>
+    
     <main> 
         <section class="imagem-principal"> 
         </section>
@@ -96,6 +112,6 @@
             </li>
          </ul>
     </footer>
-
+    <Script src="app.js"></Script>
 </body>
 </html>
