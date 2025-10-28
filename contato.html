@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+     <header class="cabecalho"> 
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/img/logo-branca-full.png" alt="Logo" ></a>
+        </div>   
+    </header>
+
+
+    <div id="geral">
+        <main class="blocoPrincipal">
+            <h1>Contato</h1>
+            <p>Reservamos esse espaço para que você fale com a equipe do EcoWater. Envie as suas sugestões, dúvidas, críticas ou elogios. Ademais, caso queira fazer uma denúncia ou report, confirme no checkbox abaixo.</p>
+
+            <form action="/contato.html" method="post" id="contato">
+                <div class="dadosGerais">
+                    <label>
+                    Nome
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="text" name="nome" required value autocomplete="off" >
+                </label>
+                </div>
+                <div class="dadosEspecificos">
+                    <label>
+                        CPF
+                        <i>(Obrigatório para denúncias)</i>
+                        <br>
+                        <input type="text" name="cpf" required value autocomplete="off" placeholder="Ex.: 123.456.789-00">
+                    </label>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                    Email
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="email" name="email" required value autocomplete="off">
+                </label>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                        Assunto
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <input type="text" id="Assunto" required value autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="dadosGerais">
+                    <label>
+                        Mensagem
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <textarea id="objetivo" name="objetivo" rows="5" required></textarea>  
+                    </label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <aside class="blocoLateral">
+            <h3>Leitura Recomendada</h3>
+            <ul class="linkAside">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 1</a></li>
+            </ul>
+        </aside>
+    </div>
+
+         <footer id="rodape">   
+
+        <a href="/index.html">
+            <img src="/img/logo-branca-full.png" class="logo-footer">
+        </a>
+         <p>Copyright&copy; 2025 - EcoWater</p>
+                
+         <ul class="icons-footer">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon_insta.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon-facebook.png" alt="Facebook">
+                </a>
+            </li>
+         </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Cabeçalho */
+
+header {
+    margin: -8px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100px;         
+    background-color: #2a65b8; 
+    position: relative;
+    height: 70px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;              
+  align-items: center;
+  text-decoration: none;
+  color: white; 
+    
+}
+
+.logo img {
+    width: 90%;
+    max-width: 150px
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+
+#geral{
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 30px;
+    padding: 40px;
+}
+
+/*Bloco de Contato*/
+.blocoPrincipal{
+    width: 70%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/*Bloco Lateral*/
+.blocoLateral{
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-right: 130px;
+    margin-bottom: 200px;
+    border-radius: 6px; 
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); 
+}
+
+
+
+
+
+
+
+
+
+        /* Rodapé */
+
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #2a65b8;
+    margin: -8px;
+}
+
+#rodape p {
+    color: #ffffff;  
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-footer{
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+    padding: 7px;
+ 
+}
+
+.icons-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.icons-footer li{
+    margin-left: 0;
+}
+
+.icons-footer img {
+    width: 25px; 
+    height: auto;
+    padding: 3px;
+}
