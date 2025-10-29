@@ -33,6 +33,22 @@ body{
     background-color: whitesmoke;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/*Fontes*/
+h1{
+    font-family: "Alan-Sans", sans-serif;
+}
+p{
+    font-family: cursive, sans-serif;
+}
+
 
 #geral{
     display: flex;
@@ -41,6 +57,7 @@ body{
     width: 100%;
     gap: 30px;
     padding: 40px;
+    flex: 1;
 }
 
 /*Bloco de Contato*/
@@ -53,9 +70,69 @@ body{
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+.dadosGerais input, .dadosEspecificos input, .dadosGerais textarea{
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.dadosGerais, .dadosEspecificos{
+    margin-bottom: 20px;
+}
+
+/*Específicas*/
+
+.check {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #2a65b8;
+        }
+
+.check:hover{
+    background-color: #0056b3;
+}
+
+.check label {
+            font-weight: bold;
+            margin: 0;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+.check input[type="checkbox"] {
+            width: auto;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+
 #cpf-container {
     display: none;
 }
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a65b8; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 
 /*Bloco Lateral*/
 .blocoLateral{
@@ -63,19 +140,11 @@ body{
     background-color: #f9f9f9;
     padding: 20px;
     margin-right: 130px;
-    margin-bottom: 200px;
+    margin-bottom: 450px;
     border-radius: 6px; 
     border: 1px solid #e0e0e0;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); 
 }
-
-
-
-
-
-
-
-
 
         /* Rodapé */
 
@@ -85,10 +154,11 @@ body{
     justify-content: space-between;
     border-top: 1px solid #606060;
     text-align: center;
-    padding: 15px 30px;
     background-color: #2a65b8;
     margin: -8px;
+    padding: 25px 30px 15px 30px;
 }
+
 
 #rodape p {
     color: #ffffff;  
@@ -122,3 +192,35 @@ body{
     height: auto;
     padding: 3px;
 }
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto-hover {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
