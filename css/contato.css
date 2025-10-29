@@ -9,8 +9,6 @@ header {
     background-color: #2a65b8; 
     position: relative;
     height: 70px;
-    padding: 35px;
-
 }
 
 .logo {
@@ -147,6 +145,28 @@ button[type="submit"]:hover {
     border: 1px solid #e0e0e0;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); 
 }
+
+.blocoLateral h3{
+    text-align: center;
+    font-family: "Alan-Sans", sans-serif;
+}
+
+.blocoLateral a{
+    text-align: justify;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+.blocoLateral li{
+    list-style:circle;
+}
+.blocoLateral li:hover{
+    font-size: 25px;
+    font-weight: bold;
+}
+
 
         /* Rodapé */
 
