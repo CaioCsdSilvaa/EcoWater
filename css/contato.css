@@ -9,6 +9,7 @@ header {
     background-color: #2a65b8; 
     position: relative;
     height: 70px;
+    padding: 35px;
 }
 
 .logo {
@@ -31,6 +32,8 @@ header {
 
 body{
     background-color: whitesmoke;
+    background-size: 100%;
+    background-image: url(/img/sl_031520_28970_04.jpg);
 }
 
 html, body {
@@ -40,6 +43,8 @@ html, body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
+
 
 /*Fontes*/
 h1{
