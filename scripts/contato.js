@@ -1,5 +1,5 @@
 document.addEventListener ('DOMContentLoaded', function(){
-    console.log('Script JavaScript carrgado.');
+    console.log('Script JavaScript carregado.');
 
 const form = document.getElementById('contatoForm');
 const isReportCheckBox = document.getElementById('isReport');
@@ -10,12 +10,12 @@ const cpfInput = document.getElementById('cpf');
 function toggleCpfVisibility(){
     if (isReportCheckBox.checked){
         cpfContainer.style.display = 'block';
-        cpfInput.setAttribute('requered', 'required');
+        cpfInput.setAttribute('requered', 'requered');
         console.log("Denúncia marcada: CPF visível e obrigatório.")
     }
     else{
         cpfContainer.style.display = 'none';
-        cpfInput.removeAttribute('requerid');
+        cpfInput.removeAttribute('requered');
         cpfInput.log ("Denúncia desmarcada: CPF oculto e opcional.")
     }
 }
