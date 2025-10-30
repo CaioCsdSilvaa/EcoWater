@@ -1,0 +1,123 @@
+/* Cabeçalho */
+
+header {
+    margin: -8px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100px;         
+    background-color: #2a65b8; 
+    position: relative;
+    height: 70px;
+    padding: 35px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;              
+  align-items: center;
+  text-decoration: none;
+  color: white; 
+    
+}
+
+.logo img {
+    width: 90%;
+    max-width: 150px
+}
+
+
+body{
+    background-color: whitesmoke;
+    background-size: 100%;
+    background-image: url(/img/sl_031520_28970_04.jpg);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+        /* Rodapé */
+
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #606060;
+    text-align: center;
+    background-color: #2a65b8;
+    margin: -8px;
+    padding: 25px 30px 15px 30px;
+}
+
+
+#rodape p {
+    color: #ffffff;  
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-footer{
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+    padding: 7px;
+ 
+}
+
+.icons-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.icons-footer li{
+    margin-left: 0;
+}
+
+.icons-footer img {
+    width: 25px; 
+    height: auto;
+    padding: 3px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto-hover {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto-hover {
+    visibility: visible;
+    opacity: 1;
+}
