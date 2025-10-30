@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Eco Water - Contato</title>
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+     <header class="cabecalho"> 
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/img/logo-branca-full.png" alt="Logo" ></a>
+        </div>   
+    </header>
+
+
+    <div id="geral">
+        <main class="blocoPrincipal">
+            <h1>Contato</h1>
+            <p>Reservamos esse espaço para que você fale com a equipe do EcoWater. Envie as suas sugestões, dúvidas, críticas ou elogios. Ademais, caso queira fazer uma denúncia ou report, clique no checkbox abaixo.</p>
+
+            <form action="/contato.html" method="post" id="contatoForm">
+
+                <div class="check">
+                    <label for="isReport">Quero fazer uma denúncia </label>
+                    <input type="checkbox" id="isReport">
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                    Nome
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="text" name="nome" required value autocomplete="off" >
+                </label>
+                </div>
+                <div class="dadosEspecificos" id="cpf-container">
+                    <label for="cpf">
+                        CPF
+                        <i>(Obrigatório para denúncias)</i>
+                        <br>
+                        <input type="text" name="cpf" value autocomplete="off" placeholder="Ex.: 123.456.789-00">
+                    </label>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                    Email
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="email" name="email" required value autocomplete="off">
+                </label>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                        Assunto
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <input type="text" id="Assunto" required value autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="dadosGerais">
+                    <label>
+                        Mensagem
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <textarea id="objetivo" name="objetivo" rows="5" required></textarea>  
+                    </label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <aside class="blocoLateral">
+            <h3>Leitura Recomendada</h3>
+            <ul class="linkAside">
+                <li><a href="/index.html">Eco-Water</a></li>
+                <li><a href="especificos/praias/01Jaguaribe/jaguaribe.html">Praia de Jaguaribe</a></li>
+                <li><a href="/especificos/animais/Peixe-boi/peixe-boi.html">Peixe-Boi</a></li>
+                <li><a href="/especificos/pesca/apa/apa.html">Área de Preservação Ambiental</a></li>
+            </ul>
+        </aside>
+
+        <div id="aside-imagem">
+            <img src="/img/ondaegotas-removebg-preview.png" alt="Gota d'água lúdica" class="onda"> 
+        </div>
+
+    </div>
+
+         <footer id="rodape">   
+
+        <a href="/index.html">
+            <img src="/img/logo-branca-full.png" class="logo-footer">
+        </a>
+
+       
+
+         <p>Copyright&copy; 2025 - EcoWater</p>
+                
+         <ul class="icons-footer">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon_insta.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon-facebook.png" alt="Facebook">
+                </a>
+            </li>
+              <li>
+                <a href="/contato.html" id="contato-icon" target="_blank">
+                    <img src="/img/icons/image.png" alt="contatos">
+                    <span class="texto-hover">Contato</span>
+                </a>
+            </li>
+         </ul>
+
+    </footer>
+
+    <script src="scripts/contato.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
+/* Cabeçalho */
+
 header {
     margin: -8px;
-    padding-bottom: 25px;
     display: flex;
     justify-content: center; 
     align-items: center;    
@@ -8,6 +9,7 @@ header {
     background-color: #2a65b8; 
     position: relative;
     height: 70px;
+    padding: 35px;
 }
 
 .logo {
@@ -22,108 +24,27 @@ header {
     
 }
 
-
-#img-logo {
-    margin-top: 25px;
-    width: 200px;
-    height: auto;
+.logo img {
+    width: 90%;
+    max-width: 150px
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
 
+body{
+    background-color: whitesmoke;
     background-size: 100%;
     background-image: url(/img/sl_031520_28970_04.jpg);
 }
 
-main{
-    flex-grow: 1;
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
-.agrupamentoCampo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-/* Teste de responsividade para mobile */
-@media (max-width: 768px) {
-    .agrupamentoCampo {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-.formulario-ong {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-    margin: 25px;
-}
-
-h1{
-    font-family: "Alan-Sans", sans-serif;
-}
-
-
-.campo {
-    margin-bottom: 20px;
-}
-
-.campo label,
-.campo-objetivo label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
-    font-family: "Open-Sans", sans-serif;
-}
-
-.campo input,
-.campo-objetivo textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-.campo input:focus,
-.campo-objetivo textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    background-color: #2a65b8; 
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: "SUSE Mono", sans-serif;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
+        /* Rodapé */
 
 
 #rodape{
@@ -131,10 +52,11 @@ button[type="submit"]:hover {
     justify-content: space-between;
     border-top: 1px solid #606060;
     text-align: center;
-    padding: 15px 30px;
     background-color: #2a65b8;
     margin: -8px;
+    padding: 25px 30px 15px 30px;
 }
+
 
 #rodape p {
     color: #ffffff;  
