@@ -181,22 +181,6 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
-#aside-imagem {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-    margin-bottom: 150px;
-}
-
-#aside-imagem img {
-    max-width: 80%; 
-    height: auto;
-    filter: drop-shadow(0 0 5px rgba(0, 150, 255, 0.4)); 
-}
-
-
-
-
         /* Rodapé */
 
 
@@ -205,9 +189,8 @@ button[type="submit"]:hover {
     justify-content: space-between;
     border-top: 1px solid #606060;
     text-align: center;
+    padding: 5px 3px;
     background-color: #2a65b8;
-    margin: -8px;
-    padding: 25px 30px 15px 30px;
 }
 
 
@@ -222,7 +205,7 @@ button[type="submit"]:hover {
     width: 100px;
     height: auto;
     max-width: 150px;
-    padding: 7px;
+    padding: 20px;
  
 }
 
@@ -241,7 +224,7 @@ button[type="submit"]:hover {
 .icons-footer img {
     width: 25px; 
     height: auto;
-    padding: 3px;
+    padding: 15px 0px;
 }
 
 #rodape .icons-footer a {
