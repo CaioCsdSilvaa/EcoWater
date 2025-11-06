@@ -145,6 +145,32 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+/*Estilização do input do anexo de imagens*/
+
+ .input-arquivos {
+    display: none; /* Esconde o input original */
+  }
+
+  .label-arquivos {
+    background-color: #205ca6;
+    color: white;
+    margin: 5px;
+    padding: 7px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .label-arquivos:hover {
+    background-color: #85b4de;
+  }
+
+  #nome-arquivos {
+    margin-left: 10px;
+    font-style: italic;
+    color: #555;
+  }
 
 /*Bloco Lateral*/
 
