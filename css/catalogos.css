@@ -17,8 +17,7 @@ body{
     min-height: 100vh; 
     background-size: 100%;
     background-image: url(/img/sl_031520_28970_04.jpg);
-    background-size: 120%;
-    background-repeat: no-repeat;
+    background-size: 140%;
 }
 
 .logo {
@@ -166,4 +165,35 @@ img {
     width: 25px; 
     height: auto;
     padding: 3px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
 }

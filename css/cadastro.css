@@ -45,11 +45,24 @@ main{
     justify-content: center;
 }
 
+.agrupamentoCampo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Teste de responsividade para mobile */
+@media (max-width: 768px) {
+    .agrupamentoCampo {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .formulario-ong {
     background-color: #fff;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
@@ -80,7 +93,7 @@ h1{
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     box-sizing: border-box;
     font-size: 16px;
     transition: border-color 0.3s;
@@ -95,10 +108,11 @@ h1{
 button[type="submit"] {
     width: 100%;
     padding: 12px;
+    margin-top: 5px;
     background-color: #2a65b8; 
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -153,4 +167,35 @@ button[type="submit"]:hover {
     width: 25px; 
     height: auto;
     padding: 3px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
 }

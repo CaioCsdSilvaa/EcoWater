@@ -96,7 +96,7 @@ html, body {
     display: inline-block; 
 }
 
-#rodape .icons-footer .texto-hover {
+#rodape .icons-footer .texto {
     visibility: hidden;
     opacity: 0;
     
@@ -117,7 +117,7 @@ html, body {
     font-size: 12px;
 }
 
-#rodape .icons-footer a:hover .texto-hover {
+#rodape .icons-footer a:hover .texto {
     visibility: visible;
     opacity: 1;
 }
