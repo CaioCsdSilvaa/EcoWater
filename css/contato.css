@@ -148,7 +148,11 @@ button[type="submit"]:hover {
 /*Estilização do input do anexo de imagens*/
 
  .input-arquivos {
-    display: none; /* Esconde o input original */
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
   }
 
   .label-arquivos {
@@ -166,7 +170,7 @@ button[type="submit"]:hover {
     background-color: #85b4de;
   }
 
-  #nome-arquivos {
+  #nome-arquivo {
     margin-left: 10px;
     font-style: italic;
     color: #555;

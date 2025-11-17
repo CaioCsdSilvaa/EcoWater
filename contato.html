@@ -32,7 +32,7 @@
                     Nome
                     <i>(Obrigatório)</i>
                     <br>
-                    <input type="text" name="nome" required value autocomplete="off" >
+                    <input type="text"  id="nome" name="nome" required value autocomplete="off" >
                 </label>
                 </div>
                 <div class="dadosEspecificos" id="cpf-container">
@@ -48,13 +48,14 @@
                         <br>
                         <input type="file" id="imagem" class="input-arquivos" name="imagem" accept="image/*">
                     </label>
+                    <span id="nome-arquivo">Nenhuma imagem selecionada.</span>
                 </div>
                 <div class="dadosGerais">
                     <label>
                     Email
                     <i>(Obrigatório)</i>
                     <br>
-                    <input type="email" name="email" required value autocomplete="off">
+                    <input type="email" id="email" name="email" required value autocomplete="off">
                 </label>
                 </div>
                 <div class="dadosGerais">
@@ -62,7 +63,7 @@
                         Assunto
                         <i>(Obrigatório)</i>
                         <br>
-                        <input type="text" id="Assunto" required value autocomplete="off">
+                        <input type="text" id="assunto" required value autocomplete="off">
                     </label>
                 </div>
 
@@ -71,7 +72,7 @@
                         Mensagem
                         <i>(Obrigatório)</i>
                         <br>
-                        <textarea id="objetivo" name="objetivo" rows="5" required></textarea>  
+                        <textarea id="mensagem" name="objetivo" rows="5" required></textarea>  
                     </label>
                 </div>
                 
