@@ -288,3 +288,164 @@ button[type="submit"]:hover {
     opacity: 1;
 }
 
+/* =====================================================
+   RESPONSIVO PARA TABLET (até 1024px)
+   ===================================================== */
+@media (max-width: 1024px) {
+
+    #geral {
+        grid-template-columns: 60% 40%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        width: 70%;
+    }
+
+    button[type="submit"] {
+        width: 40%;
+    }
+
+    .blocoLateral {
+        position: relative;
+        height: auto;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVO PARA CELULAR (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        height: 60px;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    /* LAYOUT GERAL */
+    #geral {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .blocoPrincipal {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .blocoLateral {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    /* Inputs ocupam toda largura */
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Checkbox ajustado */
+    .check {
+        flex-direction: row;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    /* Botão */
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    /* Anexos */
+    .label-arquivos {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 90px;
+        padding: 10px;
+    }
+
+    .icons-footer img {
+        width: 30px;
+        padding: 8px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVO PARA CELULAR PEQUENO (até 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    #geral {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .blocoPrincipal,
+    .blocoLateral {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        font-size: 14px;
+    }
+
+    .check {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .icons-footer img {
+        width: 26px;
+    }
+}

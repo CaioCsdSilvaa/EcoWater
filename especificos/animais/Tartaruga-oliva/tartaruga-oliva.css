@@ -337,3 +337,81 @@ header {
     visibility: visible;
     opacity: 1;
 }
+
+
+/* Telas até 768px (tablet) */
+@media (max-width: 768px) {
+
+  .main h1 {
+    font-size: 1.9rem;
+  }
+
+  .main h2 {
+    font-size: 1.7rem;
+  }
+
+  .main p {
+    font-size: 1.15rem;
+  }
+
+  /* Imagens passam a ocupar 100% */
+  .img-tartaruga-oliva-container,
+  .img-filhotes-container,
+  .img-nidacao-container,
+  .img-ovos-container,
+  .img-femea-ovos-container,
+  .img-chenai-container {
+    float: none;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  #rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+
+  .main {
+    padding: 15px;
+  }
+
+  .main h1 {
+    font-size: 1.7rem;
+  }
+
+  .main h2 {
+    font-size: 1.4rem;
+  }
+
+  .main p {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    max-width: 105px;
+  }
+
+  /* Rodapé */
+  #rodape {
+    padding: 15px;
+  }
+
+  .icons-footer img {
+    width: 22px;
+  }
+}

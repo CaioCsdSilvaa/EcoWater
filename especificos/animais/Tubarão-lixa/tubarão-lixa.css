@@ -338,3 +338,91 @@ header {
     visibility: visible;
     opacity: 1;
 }
+
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+/* Telas até 768px (tablet) */
+@media (max-width: 768px) {
+
+  /* Textos */
+  .main h1 {
+    font-size: 1.9rem;
+  }
+
+  .main h2 {
+    font-size: 1.7rem;
+  }
+
+  .main p,
+  .main li {
+    font-size: 1.15rem;
+  }
+
+  /* Todas as imagens ocupam largura cheia */
+  .img-peixe-boi-container,
+  .img-alimentando-container,
+  .img-habitat-container,
+  .img-tres-container,
+  .img-carapaca-container,
+  .img-filhote-container {
+    float: none;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  /* Cabeçalho */
+  header {
+    height: 60px;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  /* Rodapé */
+  #rodape {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+/* Telas até 480px (celular) */
+@media (max-width: 480px) {
+
+  .main {
+    padding: 15px;
+  }
+
+  .main h1 {
+    font-size: 1.7rem;
+  }
+
+  .main h2 {
+    font-size: 1.4rem;
+  }
+
+  .main p,
+  .main li {
+    font-size: 1rem;
+  }
+
+  /* Logo menor */
+  .logo img {
+    max-width: 105px;
+  }
+
+  /* Rodapé */
+  #rodape {
+    padding: 15px;
+  }
+
+  .icons-footer img {
+    width: 22px;
+  }
+}

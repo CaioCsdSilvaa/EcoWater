@@ -197,3 +197,124 @@ img {
     visibility: visible;
     opacity: 1;
 }
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA TABLET (até 1024px)
+   ===================================================== */
+@media (max-width: 1024px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #titulo {
+        font-size: 40px;
+    }
+
+    #titulo::after {
+        width: 300px;
+    }
+
+    .caixas {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .caixas ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+    }
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA CELULAR (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+    header {
+        height: 60px;
+        padding-bottom: 30px;
+        margin-bottom: -40px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    #titulo {
+        margin-top: 120px;
+        font-size: 32px;
+    }
+
+    #titulo::after {
+        width: 200px;
+    }
+
+    .imagemtexto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .caixas {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .caixas ul {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    /* FOOTER */
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo-footer {
+        width: 80px;
+    }
+
+    .icons-footer img {
+        width: 32px;
+    }
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA CELULAR PEQUENO (até 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 45px;
+    }
+
+    #titulo {
+        font-size: 26px;
+    }
+
+    .caixas {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .icons-footer img {
+        width: 28px;
+    }
+}
