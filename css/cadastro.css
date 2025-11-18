@@ -1,5 +1,6 @@
 html {
-    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 header {
@@ -161,7 +162,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-
     background-size: 100%;
     background-image: url(/img/sl_031520_28970_04.jpg);
 }
