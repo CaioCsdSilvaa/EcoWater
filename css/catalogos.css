@@ -8,7 +8,7 @@ header {
     align-items: center;    
     height: 70px;         
     background-color: #2a65b8; 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,8 +21,7 @@ body{
     padding-top: 90px;
     min-height: 100vh; 
     background-image: url(/img/sl_031520_28970_04.jpg);
-    background-size: 120%;
-    background-repeat: no-repeat;
+    background-size: 140%;
 }
 
 
@@ -87,15 +86,14 @@ body{
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 70px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    max-height: 0;
     background: linear-gradient(180deg, #2a65b8 0%, #1f4d8f 100%);
-    transition: max-height 0.5s ease;
+    transition: max-height 0.4s ease;
     overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
@@ -104,7 +102,7 @@ body{
 }
 
 .menu-content {
-    padding: 90px 0 40px 0;
+    padding: 20px 0 40px 0;
     opacity: 0;
     transition: opacity 0.4s ease 0.2s;
 }
@@ -112,6 +110,7 @@ body{
 .menu.active .menu-content {
     opacity: 1;
 }
+
 
 .menu-item {
     padding: 1.5rem 2.5rem;
@@ -164,9 +163,6 @@ body{
     opacity: 1;
     visibility: visible;
 }
-
-
-
 
 
 .conteudo {
@@ -296,4 +292,156 @@ img {
     width: 25px; 
     height: auto;
     padding: 3px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA TABLET (até 1024px)
+   ===================================================== */
+@media (max-width: 1024px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #titulo {
+        font-size: 40px;
+    }
+
+    #titulo::after {
+        width: 300px;
+    }
+
+    .caixas {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .caixas ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+    }
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA CELULAR (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+    header {
+        height: 60px;
+        padding-bottom: 30px;
+        margin-bottom: -40px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    #titulo {
+        margin-top: 120px;
+        font-size: 32px;
+    }
+
+    #titulo::after {
+        width: 200px;
+    }
+
+    .imagemtexto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .caixas {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .caixas ul {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    /* FOOTER */
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo-footer {
+        width: 80px;
+    }
+
+    .icons-footer img {
+        width: 32px;
+    }
+}
+
+
+
+/* =====================================================
+   RESPONSIVIDADE PARA CELULAR PEQUENO (até 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 45px;
+    }
+
+    #titulo {
+        font-size: 26px;
+    }
+
+    .caixas {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .icons-footer img {
+        width: 28px;
+    }
 }

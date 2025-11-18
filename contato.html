@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Eco Water - Contato</title>
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+     <header class="cabecalho"> 
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/img/logo-branca-full.png" alt="Logo" ></a>
+        </div>   
+        
+        <nav class="hamburguer-nav">
+            <div class="hamburguer" id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="menu" id="menu">
+        <nav class="menu-content">
+            <a href="/index.html" class="menu-item">Início</a>
+            <a href="/catalogos.html" class="menu-item">Catálogo</a>
+            <a href="/cadastro.html" class="menu-item">Cadastro</a>
+            <a href="/sobre_nos.html" class="menu-item">Sobre Nós</a>
+        </nav>
+    </div>
+
+
+    <div id="geral">
+        <main class="blocoPrincipal">
+            <h1>Contato</h1>
+            <p>Reservamos esse espaço para que você fale com a equipe do EcoWater. Envie as suas sugestões, dúvidas, críticas ou elogios. Ademais, caso queira fazer uma denúncia ou report, clique no checkbox abaixo.</p>
+
+            <form action="/contato.html" method="post" id="contatoForm">
+
+                <div class="check">
+                    <label for="isReport">Quero fazer uma denúncia </label>
+                    <input type="checkbox" id="isReport">
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                    Nome
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="text"  id="nome" name="nome" required value autocomplete="off" >
+                </label>
+                </div>
+                <div class="dadosEspecificos" id="cpf-container">
+                    <label for="cpf">
+                        CPF
+                        <i>(Obrigatório para denúncias)</i>
+                        <br>
+                        <input type="text" id="cpf" name="cpf" value autocomplete="off" placeholder="Só números - 12345678900">
+                    </label>
+                    <br>
+                    <label for="imagem" class="label-arquivos">
+                        <i>(Clique aqui e envie imagens para formalizar a sua denúncia.)</i>
+                        <br>
+                        <input type="file" id="imagem" class="input-arquivos" name="imagem" accept="image/*">
+                    </label>
+                    <span id="nome-arquivo">Nenhuma imagem selecionada.</span>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                    Email
+                    <i>(Obrigatório)</i>
+                    <br>
+                    <input type="email" id="email" name="email" required value autocomplete="off">
+                </label>
+                </div>
+                <div class="dadosGerais">
+                    <label>
+                        Assunto
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <input type="text" id="assunto" required value autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="dadosGerais">
+                    <label>
+                        Mensagem
+                        <i>(Obrigatório)</i>
+                        <br>
+                        <textarea id="mensagem" name="objetivo" rows="5" required></textarea>  
+                    </label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <aside class="blocoLateral">
+            <h3>Leitura Recomendada</h3>
+            <ul class="linkAside">
+                <li><a href="/index.html">Eco-Water</a></li>
+                <li><a href="especificos/praias/01Jaguaribe/jaguaribe.html">Praia de Jaguaribe</a></li>
+                <li><a href="/especificos/animais/Peixe-boi/peixe-boi.html">Peixe-Boi</a></li>
+                <li><a href="/especificos/pesca/apa/apa.html">Área de Preservação Ambiental</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+         <footer id="rodape">   
+
+        <a href="/index.html">
+            <img src="/img/logo-branca-full.png" class="logo-footer">
+        </a>
+
+       
+
+         <p>Copyright&copy; 2025 - EcoWater</p>
+                
+         <ul class="icons-footer">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon_insta.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="/img/icons/icon-facebook.png" alt="Facebook">
+                </a>
+            </li>
+              <li>
+                <a href="/contato.html" id="contato-icon" target="_blank">
+                    <img src="/img/icons/image.png" alt="contatos">
+                    <span class="texto-hover">Contato</span>
+                </a>
+            </li>
+         </ul>
+
+    </footer>
+    <script src="scripts/contato.js"></script>
+    <script src="hamburguer.js"></script>
+</body>
+</html>

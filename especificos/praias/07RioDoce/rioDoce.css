@@ -318,3 +318,134 @@ body {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ===========================
+   TABLET — até 768px
+   =========================== */
+@media (max-width: 768px) {
+
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .praia-info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .img-praia-container {
+        float: none;
+        margin: 0 auto 20px auto !important;
+        width: 70% !important;
+    }
+
+    .img-praia,
+    .imagem-praia {
+        width: 100%;
+        height: auto;
+        max-height: 330px;
+    }
+
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+
+/* ===========================
+   CELULAR — até 480px
+   =========================== */
+@media (max-width: 480px) {
+
+    header {
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 95px;
+    }
+
+    .praia-info {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .img-praia-container {
+        float: none;
+        width: 100% !important;
+        margin: 0 auto 15px auto !important;
+    }
+
+    .img-praia,
+    .imagem-praia {
+        width: 100%;
+        height: auto;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #rodape {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}

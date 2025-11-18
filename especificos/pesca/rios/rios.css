@@ -381,3 +381,145 @@ body {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ====== TABLET — até 768px ====== */
+@media (max-width: 768px) {
+
+    /* Sidebar some */
+    .sidebar,
+    .sidebar-titulo,
+    .sidebar-links {
+        display: none;
+    }
+
+    /* Layout do conteúdo */
+    .rios-info,
+    .anatomia-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-rios {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .poluicao {
+        margin-left: 0;
+        width: 200px;
+    }
+
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+
+
+
+/* ====== CELULAR — até 480px ====== */
+@media (max-width: 480px) {
+
+    /* Remove sidebar no celular */
+    .sidebar,
+    .sidebar-titulo,
+    .sidebar-links {
+        display: none;
+    }
+
+    /* Conteúdo empilhado */
+    .rios-info,
+    .anatomia-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-rios {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .poluicao {
+        width: 180px;
+        margin-left: 0;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 110px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #rodape p {
+        padding: 5px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}

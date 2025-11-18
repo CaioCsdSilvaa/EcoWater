@@ -3,7 +3,6 @@ html {
     overflow-y: scroll;
 }
 
-
 header {
   display: flex;
   justify-content: center; 
@@ -15,11 +14,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 1001;
-}
-
-body {
-  padding-top: 50px;
-  scroll-behavior: smooth;
 }
 
 .logo {
@@ -161,119 +155,22 @@ body {
 }
 
 
-.praia-info {
-    display: flex;
-    gap: 30px;
-    flex-direction: row-reverse;
+body{
+    background-color: whitesmoke;
+    background-size: 100%;
+    background-image: url(/img/sl_031520_28970_04.jpg);
+    padding-top: 50px;
 }
 
-.texto-info {
-    flex: 1;
-}
-
-.img-praia-container {
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;  
 }
-
-.img-praia {
-    display: block;
-    width: 450px; 
-    height: 400px; 
-    border-radius: 8px;
-}
-
-.img-praia-container a{
-    text-decoration: none;
-    color: #2a65b8;
-}
-
-.img-praia-container a:hover{
-    color: #062d64;
-}
-
-.descricao-imagem {
-    align-items: center;
-    max-width: 60ch;
-}
-
-
-/* CSS do Tópico "Dentes" e "Visão" */
-
-
-.img-praia-container {
-  float: right; 
-  margin-left: 30px; 
-  margin-bottom: 15px; 
-  width: 450px;
-  height: auto;
-}
-
-
-.imagem-praia{
-  display: block;
-  width: 100%; 
-  height: 250px;
-  border-radius: 8px;
-}
-
-
-/* Formatação principal */
-
-
-.main h1 {
-    display: flex;
-    font-family: 'Linux Libertine','Georgia','Times','Source Serif 4',serif;
-    font-size: 1.85rem;
-    line-height: 1.375;
-    font-weight: normal;
-    margin: 0;
-
-}
-
-.main h2 {
-    display: flex;
-    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;
-    font-size: 1.5rem;
-    line-height: 1.375;
-    font-weight: normal;
-    margin: 0;
-}
-
-
-.main p {
-    font-family: sans-serif;
-    
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    justify-content: space-between;
-}
-
-.main {
-    width: 90%;
-    max-width: 950px; 
-    
-    
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    
-
-    background-color: #ffffff; 
-    padding: 20px 30px; 
-    border-radius: 0px; 
-    box-shadow: 0 0px 0px rgb(255, 255, 255);
-}
-
-
 
         /* Rodapé */
+
 
 
 #rodape{
@@ -283,14 +180,15 @@ body {
     text-align: center;
     padding: 15px 30px;
     background-color: #2a65b8;
-    margin: -8px;
 }
 
 #rodape p {
-    color: #ffffff;  
+    color: #ffffff; 
+    margin: 0; 
     flex-grow: 1;
     text-align: center;
     padding: 10px;
+    
 }
 
 .logo-footer{
@@ -318,6 +216,7 @@ body {
     height: auto;
     padding: 3px;
 }
+
 #rodape .icons-footer a {
     position: relative; 
     display: inline-block; 
@@ -347,114 +246,4 @@ body {
 #rodape .icons-footer a:hover .texto {
     visibility: visible;
     opacity: 1;
-}
-
-/* ===========================
-   TABLET — até 768px
-   =========================== */
-@media (max-width: 768px) {
-
-    /* Cabeçalho */
-    header {
-        height: 60px;
-    }
-
-    .logo img {
-        max-width: 120px;
-    }
-
-    /* Conteúdo */
-    .praia-info {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .img-praia-container {
-        float: none;
-        margin: 0 auto 20px auto !important;
-        width: 80%;
-    }
-
-    .img-praia,
-    .imagem-praia {
-        width: 100%;
-        height: auto;
-        max-height: 320px;
-    }
-
-    .main {
-        width: 95%;
-        padding: 15px;
-    }
-
-    /* Rodapé */
-    #rodape {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .icons-footer {
-        justify-content: center;
-    }
-}
-
-
-
-/* ===========================
-   CELULAR — até 480px
-   =========================== */
-@media (max-width: 480px) {
-
-    /* Cabeçalho */
-    header {
-        height: 55px;
-    }
-
-    .logo img {
-        max-width: 100px;
-    }
-
-    /* Conteúdo */
-    .praia-info {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .img-praia-container {
-        float: none;
-        width: 100% !important;
-        margin: 0 auto 15px auto !important;
-    }
-
-    .img-praia,
-    .imagem-praia {
-        width: 100%;
-        height: auto;
-        max-width: 260px;
-        margin: 0 auto;
-    }
-
-    .main {
-        width: 100%;
-        padding: 10px;
-    }
-
-    /* Rodapé */
-    #rodape {
-        flex-direction: column;
-        padding: 15px;
-        gap: 10px;
-    }
-
-    #rodape p {
-        padding: 5px;
-    }
-
-    .icons-footer img {
-        width: 22px;
-    }
 }

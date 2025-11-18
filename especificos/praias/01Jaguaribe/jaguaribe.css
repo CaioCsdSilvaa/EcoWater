@@ -39,6 +39,127 @@ body {
     max-width: 150px
 }
 
+.hamburguer-nav {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+}
+
+.hamburguer {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburguer span {
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburguer span:nth-child(1) { top: 25%; }
+.hamburguer span:nth-child(3) { top: 75%; }
+
+.hamburguer.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(2) { opacity: 0; }
+
+.hamburguer.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    max-height: 0;
+    background: linear-gradient(180deg, #2a65b8 0%, #1f4d8f 100%);
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu.active {
+    max-height: 400px;
+}
+
+.menu-content {
+    padding: 20px 0 40px 0;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.2s;
+}
+
+.menu.active .menu-content {
+    opacity: 1;
+}
+
+
+.menu-item {
+    padding: 1.5rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "SUSE Mono", sans-serif;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+.menu-item:hover {
+    border-left-color: #ffffff;
+    padding-left: 3rem;
+    color: #ffffff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .praia-info {
     display: flex;
@@ -196,4 +317,130 @@ body {
     width: 25px; 
     height: auto;
     padding: 3px;
+}
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ====== TABLET — até 768px ====== */
+@media (max-width: 768px) {
+
+    /* Imagens e container */
+    .praia-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-praia-container {
+        float: none;
+        margin: 0 auto 20px auto;
+        width: 80%;
+    }
+
+    .img-praia {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header {
+        height: 65px;
+    }
+
+    .logo img {
+        max-width: 130px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+
+
+/* ====== CELULAR — até 480px ====== */
+@media (max-width: 480px) {
+
+    .praia-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-praia-container {
+        float: none;
+        width: 100%;
+        margin: 0 auto 15px auto;
+    }
+
+    .img-praia {
+        width: 100%;
+        height: auto;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 110px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #rodape p {
+        padding: 5px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
 }

@@ -11,8 +11,10 @@ header {
     height: 100px;         
     background-color: #2a65b8; 
     position: relative;
-    height: 70px;
+    height: 70px;  
+    z-index: 1001;
 }
+
 
 .logo {
   position: absolute;
@@ -170,11 +172,24 @@ main{
     justify-content: center;
 }
 
+.agrupamentoCampo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Teste de responsividade para mobile */
+@media (max-width: 768px) {
+    .agrupamentoCampo {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .formulario-ong {
     background-color: #fff;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
@@ -205,7 +220,7 @@ h1{
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     box-sizing: border-box;
     font-size: 16px;
     transition: border-color 0.3s;
@@ -220,10 +235,11 @@ h1{
 button[type="submit"] {
     width: 100%;
     padding: 12px;
+    margin-top: 5px;
     background-color: #2a65b8; 
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -278,4 +294,143 @@ button[type="submit"]:hover {
     width: 25px; 
     height: auto;
     padding: 3px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ===========================
+   RESPONSIVIDADE PARA TABLET
+   =========================== */
+@media (max-width: 1024px) {
+
+    header {
+        height: 70px;
+    }
+
+    #img-logo {
+        width: 160px;
+        margin-top: 15px;
+    }
+
+    .formulario-ong {
+        max-width: 450px;
+        padding: 30px;
+    }
+
+    .agrupamentoCampo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* ===========================
+   RESPONSIVIDADE PARA CELULAR
+   =========================== */
+@media (max-width: 768px) {
+
+    header {
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    .logo {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #img-logo {
+        width: 140px;
+        margin-top: 10px;
+    }
+
+    .formulario-ong {
+        width: 90%;
+        padding: 25px;
+        margin: 20px auto;
+    }
+
+    .agrupamentoCampo {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 90px;
+    }
+
+    .icons-footer img {
+        width: 30px;
+    }
+}
+
+/* ===========================
+   RESPONSIVIDADE PARA CELULAR PEQUENO
+   =========================== */
+@media (max-width: 480px) {
+
+    header {
+        height: 55px;
+    }
+
+    #img-logo {
+        width: 120px;
+    }
+
+    .formulario-ong {
+        width: 95%;
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .icons-footer img {
+        width: 28px;
+    }
 }

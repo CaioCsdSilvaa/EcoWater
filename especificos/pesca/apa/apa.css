@@ -389,3 +389,176 @@ body {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ===========================
+   RESPONSIVIDADE — 768px (Tablet)
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Sidebar */
+    .sidebar,
+    .sidebar-titulo,
+    .sidebar-links {
+        position: static;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .sidebar-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    /* Layout principal */
+    .apa-info,
+    .anatomia-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Imagens */
+    #imagem-final {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .img-apa {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .poluicao {
+        margin-left: 0;
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Main */
+    .main {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .main h1 {
+        font-size: 1.7rem;
+    }
+
+    .main h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+
+/* ===========================
+   RESPONSIVIDADE — 480px (Celular)
+   =========================== */
+@media (max-width: 480px) {
+
+    /* Sidebar empilhada */
+    .sidebar-links {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Layout */
+    .apa-info,
+    .anatomia-info {
+        flex-direction: column;
+    }
+
+    /* Imagens */
+    #imagem-final {
+        width: 100%;
+    }
+
+    .img-apa {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .poluicao {
+        width: 90%;
+        max-width: 260px;
+    }
+
+    /* Títulos e texto */
+    .main h1 {
+        font-size: 1.55rem;
+    }
+
+    .main h2 {
+        font-size: 1.25rem;
+    }
+
+    .main p {
+        font-size: 0.98rem;
+    }
+
+    /* Header */
+    .logo img {
+        max-width: 110px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo-footer {
+        max-width: 100px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}

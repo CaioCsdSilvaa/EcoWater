@@ -1,0 +1,578 @@
+/* Cabeçalho */
+html {
+    overflow-y: scroll;
+}
+
+
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 70px;         
+  background-color: #2a65b8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;              
+  align-items: center;
+  text-decoration: none;
+  color: white; 
+    
+}
+
+.logo img {
+    width: 90%;
+    max-width: 150px
+}
+
+.hamburguer-nav {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+}
+
+.hamburguer {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburguer span {
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburguer span:nth-child(1) { top: 25%; }
+.hamburguer span:nth-child(3) { top: 75%; }
+
+.hamburguer.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(2) { opacity: 0; }
+
+.hamburguer.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    max-height: 0;
+    background: linear-gradient(180deg, #2a65b8 0%, #1f4d8f 100%);
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu.active {
+    max-height: 400px;
+}
+
+.menu-content {
+    padding: 20px 0 40px 0;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.2s;
+}
+
+.menu.active .menu-content {
+    opacity: 1;
+}
+
+
+.menu-item {
+    padding: 1.5rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "SUSE Mono", sans-serif;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+.menu-item:hover {
+    border-left-color: #ffffff;
+    padding-left: 3rem;
+    color: #ffffff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+body{
+    background-color: whitesmoke;
+    background-size: 100%;
+    background-image: url(/img/sl_031520_28970_04.jpg);
+    padding-top: 50px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Fontes*/
+h1{
+    font-family: "Alan-Sans", sans-serif;
+}
+p{
+    font-family: cursive, sans-serif;
+}
+
+
+#geral{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 30px;
+    padding: 40px;
+    flex: 1;
+}
+
+/*Bloco de Contato*/
+
+.blocoPrincipal{
+    grid-column: 1;
+    grid-row: 1 / 3; /* Ocupa as duas linhas */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+.dadosGerais input, .dadosEspecificos input, .dadosGerais textarea{
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.dadosGerais, .dadosEspecificos{
+    margin-bottom: 20px;
+}
+
+/*Específicas*/
+
+.check {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #2a65b8;
+            border-radius: 25px;
+        }
+
+.check:hover{
+    background-color: #0056b3;
+}
+
+.check label {
+            font-weight: bold;
+            margin: 0;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+.check input[type="checkbox"] {
+            width: auto;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+
+
+#cpf-container {
+    display: none;
+}
+
+
+button[type="submit"] {
+    width: 20%;
+    padding: 12px;
+    background-color: #2a65b8; 
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Estilização do input do anexo de imagens*/
+
+ .input-arquivos {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .label-arquivos {
+    background-color: #205ca6;
+    color: white;
+    margin: 5px;
+    padding: 7px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .label-arquivos:hover {
+    background-color: #85b4de;
+  }
+
+  #nome-arquivo {
+    margin-left: 10px;
+    font-style: italic;
+    color: #555;
+  }
+
+/*Bloco Lateral*/
+
+.blocoLateral{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 25px; 
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    height: fit-content; 
+}
+
+
+.blocoLateral h3{
+    text-align: center;
+    font-family: "Alan-Sans", sans-serif;
+}
+
+.blocoLateral a{
+    text-align: justify;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+.blocoLateral li{
+    list-style:circle;
+}
+.blocoLateral li:hover{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+        /* Rodapé */
+
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding: 5px 3px;
+    background-color: #2a65b8;
+}
+
+
+#rodape p {
+    color: #ffffff;  
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-footer{
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+    padding: 20px;
+ 
+}
+
+.icons-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.icons-footer li{
+    margin-left: 0;
+}
+
+.icons-footer img {
+    width: 25px; 
+    height: auto;
+    padding: 15px 0px;
+}
+
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto-hover {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* =====================================================
+   RESPONSIVO PARA TABLET (até 1024px)
+   ===================================================== */
+@media (max-width: 1024px) {
+
+    #geral {
+        grid-template-columns: 60% 40%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        width: 70%;
+    }
+
+    button[type="submit"] {
+        width: 40%;
+    }
+
+    .blocoLateral {
+        position: relative;
+        height: auto;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVO PARA CELULAR (até 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        height: 60px;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    /* LAYOUT GERAL */
+    #geral {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .blocoPrincipal {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .blocoLateral {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    /* Inputs ocupam toda largura */
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Checkbox ajustado */
+    .check {
+        flex-direction: row;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    /* Botão */
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    /* Anexos */
+    .label-arquivos {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 90px;
+        padding: 10px;
+    }
+
+    .icons-footer img {
+        width: 30px;
+        padding: 8px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVO PARA CELULAR PEQUENO (até 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    #geral {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .blocoPrincipal,
+    .blocoLateral {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .dadosGerais input,
+    .dadosEspecificos input,
+    .dadosGerais textarea {
+        font-size: 14px;
+    }
+
+    .check {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .icons-footer img {
+        width: 26px;
+    }
+}

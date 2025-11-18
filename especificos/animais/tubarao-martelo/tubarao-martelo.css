@@ -354,3 +354,141 @@ body {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ===========================
+   RESPONSIVIDADE — 768px (Tablet)
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Remover floats e centralizar imagens */
+    .img-tubarao-martelo-container,
+    .img-costa-rica-container {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
+
+    /* Ajustes do header */
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    /* Main */
+    .main {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main h2 {
+        font-size: 1.7rem;
+    }
+
+    .main p {
+        font-size: 1.15rem;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+
+    .logo-footer {
+        margin: 0 auto;
+        max-width: 120px;
+    }
+}
+
+/* ===========================
+   RESPONSIVIDADE — 480px (Celular)
+   =========================== */
+@media (max-width: 480px) {
+
+    /* Imagens sempre 100% */
+    .img-tubarao-martelo-container,
+    .img-costa-rica-container {
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 110px;
+    }
+
+    /* Textos reduzidos */
+    .main h1 {
+        font-size: 1.7rem;
+    }
+
+    .main h2 {
+        font-size: 1.45rem;
+    }
+
+    .main p {
+        font-size: 1.05rem;
+    }
+
+    .main {
+        padding: 12px 15px;
+    }
+
+    /* Rodapé em coluna */
+    #rodape {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo-footer {
+        max-width: 100px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}

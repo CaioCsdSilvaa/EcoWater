@@ -242,3 +242,140 @@ header {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ========================== */
+/* 📱 Responsivo — TABLET     */
+/* ========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    /* Imagens principais ficam menores e centralizadas */
+    .img-cavalo-container,
+    .img-anatomia-container,
+    .img-carapaca-container {
+        width: 60%;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main h2 {
+        font-size: 1.7rem;
+    }
+
+    .main p {
+        font-size: 1.15rem;
+    }
+
+    #rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+
+/* ========================== */
+/* 📱 Responsivo — CELULAR    */
+/* ========================== */
+
+@media (max-width: 480px) {
+
+    header {
+        height: 55px;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    /* Todas as imagens ocupam 100% da tela */
+    .img-cavalo-container,
+    .img-anatomia-container,
+    .img-carapaca-container {
+        width: 100%;
+        float: none;
+        margin: 15px auto;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .main h2 {
+        font-size: 1.4rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+        word-spacing: 0.05rem;
+    }
+
+    #rodape {
+        flex-direction: column;
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}

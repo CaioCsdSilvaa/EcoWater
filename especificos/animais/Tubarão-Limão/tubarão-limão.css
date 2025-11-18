@@ -242,3 +242,115 @@ header {
     height: auto;
     padding: 3px;
 }
+#rodape .icons-footer a {
+    position: relative; 
+    display: inline-block; 
+}
+
+#rodape .icons-footer .texto {
+    visibility: hidden;
+    opacity: 0;
+    
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; 
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+#rodape .icons-footer a:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+/* Telas até 768px (tablet) */
+@media (max-width: 768px) {
+
+  /* Ajustes de texto */
+  .main h1 {
+    font-size: 1.9rem;
+  }
+
+  .main h2 {
+    font-size: 1.7rem;
+  }
+
+  .main p {
+    font-size: 1.15rem;
+  }
+
+  /* Imagens passam a ocupar 100% */
+  .img-cavalo-container,
+  .img-anatomia-container,
+  .img-carapaca-container {
+    float: none;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  /* Cabeçalho */
+  header {
+    height: 60px;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  /* Rodapé */
+  #rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+/* Telas até 480px (celular) */
+@media (max-width: 480px) {
+
+  .main {
+    padding: 15px;
+  }
+
+  .main h1 {
+    font-size: 1.7rem;
+  }
+
+  .main h2 {
+    font-size: 1.4rem;
+  }
+
+  .main p {
+    font-size: 1rem;
+  }
+
+  /* Logo */
+  .logo img {
+    max-width: 105px;
+  }
+
+  /* Rodapé */
+  #rodape {
+    padding: 15px;
+  }
+
+  .icons-footer img {
+    width: 22px;
+  }
+}
