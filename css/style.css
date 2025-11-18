@@ -76,7 +76,7 @@ main{
 
 .menu {
     position: fixed;
-    top: 54px;
+    top: 36px;
     right: calc((100% - 90%) / 2);
     width: 300px;
     max-height: 100px;
@@ -93,7 +93,7 @@ main{
 }
 
 .menu-content {
-    padding: 85px 0 40px 0;
+    padding: 102px 0 40px 0;
     opacity: 0;
     transform: translateY(-20px);
     transition: all 0.4s ease 0.2s;
