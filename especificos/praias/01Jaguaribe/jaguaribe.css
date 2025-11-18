@@ -1,14 +1,25 @@
 /* Cabeçalho */
+html {
+    overflow-y: scroll;
+}
+
 
 header {
-    margin: -8px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    height: 100px;         
-    background-color: #2a65b8; 
-    position: relative;
-    height: 70px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 70px;         
+  background-color: #2a65b8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+body {
+  padding-top: 50px;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -26,11 +37,6 @@ header {
 .logo img {
     width: 90%;
     max-width: 150px
-}
-
-
-body {
-    scroll-behavior: smooth;
 }
 
 

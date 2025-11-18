@@ -1,14 +1,24 @@
 /* Cabeçalho */
+html {
+    overflow-y: scroll;
+}
+
 
 header {
-    margin: -8px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    height: 100px;         
-    background-color: #2a65b8; 
-    position: relative;
-    height: 70px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 70px;         
+  background-color: #2a65b8; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+body {
+  padding-top: 50px;
 }
 
 .logo {
@@ -28,6 +38,126 @@ header {
     max-width: 150px
 }
 
+.hamburguer-nav {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+}
+
+.hamburguer {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburguer span {
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.hamburguer span:nth-child(1) { top: 25%; }
+.hamburguer span:nth-child(3) { top: 75%; }
+
+.hamburguer.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburguer.active span:nth-child(2) { opacity: 0; }
+
+.hamburguer.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    max-height: 0;
+    background: linear-gradient(180deg, #2a65b8 0%, #1f4d8f 100%);
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu.active {
+    max-height: 400px;
+}
+
+.menu-content {
+    padding: 20px 0 40px 0;
+    opacity: 0;
+    transition: opacity 0.4s ease 0.2s;
+}
+
+.menu.active .menu-content {
+    opacity: 1;
+}
+
+
+.menu-item {
+    padding: 1.5rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "SUSE Mono", sans-serif;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+.menu-item:hover {
+    border-left-color: #ffffff;
+    padding-left: 3rem;
+    color: #ffffff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* CSS do Tópico Inicial */
 
