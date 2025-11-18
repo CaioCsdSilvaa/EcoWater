@@ -249,11 +249,36 @@ html, body {
 }
 
 
-/* Telas até 768px (celulares grandes) */
+/* ============================
+        RESPONSIVIDADE
+============================ */
+
+/* Tablets e telas até 1024px */
+@media (max-width: 1024px) {
+
+    .logo img {
+        max-width: 130px;
+    }
+
+    .menu {
+        width: 260px;
+    }
+
+    .menu-item {
+        font-size: 1.2rem;
+    }
+
+    #rodape {
+        padding: 20px;
+    }
+}
+
+
+/* Celulares grandes (até 768px) */
 @media (max-width: 768px) {
 
     header {
-        height: 65px;
+        height: 60px;
     }
 
     .hamburguer-nav {
@@ -271,6 +296,7 @@ html, body {
 
     .menu {
         width: 220px;
+        top: 60px;
     }
 
     .menu-item {
@@ -289,11 +315,17 @@ html, body {
     }
 }
 
-/* Telas até 480px (celulares pequenos) */
+
+/* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
 
     header {
-        height: 60px;
+        height: 55px;
+    }
+
+    body {
+        padding-top: 55px;
+        background-size: cover;
     }
 
     .logo img {
@@ -305,13 +337,9 @@ html, body {
         height: 32px;
     }
 
-    body {
-        padding-top: 60px;
-        background-size: cover;
-    }
-
     .menu {
         width: 180px;
+        top: 55px;
     }
 
     .menu-item {
@@ -324,10 +352,42 @@ html, body {
     }
 
     .logo-footer {
-        width: 80px;
+        max-width: 80px;   /* fica menor e mais elegante no celular */
     }
+
 
     .icons-footer img {
         width: 22px;
     }
+}
+
+
+/* Telas muito pequenas (até 360px) */
+@media (max-width: 360px) {
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .menu {
+        width: 160px;
+    }
+
+    .menu-item {
+        font-size: 0.95rem;
+    }
+
+    #rodape p {
+        font-size: 0.85rem;
+    }
+}
+
+#FotoGp {
+    width: 100%;
+    max-width: 800px;   /* mantém o limite no desktop */
+    height: auto;       /* mantém proporção */
+    display: block;
+    margin: 20px auto;  /* centraliza */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
