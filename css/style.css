@@ -532,27 +532,53 @@ a{
     opacity: 1;
 }
 
-/* ================================
+/* =========================================================
+   TABLETS — até 1024px
+   ========================================================= */
+@media (max-width: 1024px) {
+
+    .cabecalho {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #headerLinks {
+        gap: 40px;
+    }
+
+    #img-logo {
+        width: 130px;
+    }
+
+    .centro-pagina {
+        max-width: 90%;
+        gap: 30px;
+    }
+
+    #mapa {
+        width: 420px;
+    }
+
+    .blocoLateral, .botões {
+        width: 220px;
+    }
+}
+
+
+/* =========================================================
    CELULAR — até 768px
-   ================================ */
+   ========================================================= */
 @media (max-width: 768px) {
 
     /* Header */
     .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
+        width: 92%;
         padding: 15px;
-        width: 95%;
-        height: auto;
-        top: 10px;
-    }
-
-    #img-logo {
-        width: 110px;
+        border-radius: 12px;
     }
 
     #headerLinks {
-        display: none; /* Esconde links grandes, usa só hambúrguer */
+        display: none;  /* usa só o menu hamburguer */
     }
 
     .hamburguer {
@@ -561,9 +587,9 @@ a{
     }
 
     .menu {
-        width: 230px;
-        right: 10px !important;
-        top: 80px;
+        right: 20px !important;
+        width: 240px;
+        top: 70px;
     }
 
     .menu-item {
@@ -573,57 +599,60 @@ a{
 
     /* Imagem principal */
     .imagem-principal {
-        height: 45vh;
+        height: 55vh;
     }
 
-    /* Conteúdo */
+    /* Layout principal */
     .centro-pagina {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        max-width: 90%;
+        max-width: 95%;
+        gap: 40px;
     }
 
     #mapa {
         width: 100%;
-        max-width: 420px;
+        max-width: 480px;
     }
 
-    /* Mais vistos */
+    /* Bloco "mais vistos" */
     .blocoLateral {
         width: 90%;
-        margin: 0 auto;
+        margin-top: 10px;
     }
 
     .blocoLateral li:hover {
-        font-size: 18px; /* Evita quebrar layout */
+        font-size: 18px; /* evita quebrar */
     }
 
     /* Botões */
     .botões {
-        width: 100%;
-        margin: 0 auto;
+        width: 90%;
+        align-items: center;
     }
 
     .botões button {
-        width: 85%;
+        width: 90%;
         font-size: 15px;
-        display: flex;
-        justify-content: center;
     }
 
-    /* Parágrafo */
+    /* Título */
+    #titulo {
+        font-size: 46px;
+    }
+
+    /* Texto */
     #paragrafo {
         font-size: 15px;
-        margin: 40px 15px;
+        margin: 30px 20px;
     }
 
     /* Footer */
     #rodape {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
-        padding: 20px 0;
+        gap: 15px;
+        padding: 20px 10px;
     }
 
     .icons-footer {
@@ -632,18 +661,18 @@ a{
 }
 
 
-/* ================================
+/* =========================================================
    CELULAR PEQUENO — até 480px
-   ================================ */
+   ========================================================= */
 @media (max-width: 480px) {
 
     .cabecalho {
         padding: 12px;
-        border-radius: 10px;
+        width: 94%;
     }
 
     #img-logo {
-        width: 90px;
+        width: 95px;
     }
 
     .hamburguer {
@@ -653,45 +682,80 @@ a{
 
     .menu {
         width: 180px;
+        top: 65px;
     }
 
     .menu-item {
         font-size: 1rem;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.4rem;
     }
 
-    /* Imagem principal */
     .imagem-principal {
-        height: 38vh;
+        height: 42vh;
     }
 
     #titulo {
-        font-size: 38px;
+        font-size: 34px;
     }
 
-    /* Mais vistos */
-    .blocoLateral {
-        width: 95%;
-    }
-
-    /* Mapa */
     #mapa {
         width: 100%;
     }
 
-    /* Botões */
-    .botões button {
-        font-size: 14px;
-        padding: 6px 10px;
+    .blocoLateral {
+        width: 95%;
+        padding: 10px;
     }
 
-    /* Footer */
+    .botões button {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    #paragrafo {
+        font-size: 14px;
+    }
+
     .logo-footer {
-        width: 70px;
+        width: 80px;
     }
 
     .icons-footer img {
-        width: 20px;
+        width: 22px;
     }
 }
 
+
+/* =========================================================
+   TELAS MUITO PEQUENAS — até 360px
+   ========================================================= */
+@media (max-width: 360px) {
+
+    #img-logo {
+        width: 75px;
+    }
+
+    .menu {
+        width: 150px;
+    }
+
+    .menu-item {
+        font-size: 0.9rem;
+    }
+
+    #titulo {
+        font-size: 28px;
+    }
+
+    .botões button {
+        font-size: 13px;
+    }
+
+    #paragrafo {
+        font-size: 13px;
+    }
+
+    #rodape p {
+        font-size: 13px;
+    }
+}
