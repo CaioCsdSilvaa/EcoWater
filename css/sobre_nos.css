@@ -247,3 +247,87 @@ html, body {
     visibility: visible;
     opacity: 1;
 }
+
+
+/* Telas até 768px (celulares grandes) */
+@media (max-width: 768px) {
+
+    header {
+        height: 65px;
+    }
+
+    .hamburguer-nav {
+        right: 20px;
+    }
+
+    .hamburguer {
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .menu {
+        width: 220px;
+    }
+
+    .menu-item {
+        padding: 1.2rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    #rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .icons-footer {
+        justify-content: center;
+    }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+
+    header {
+        height: 60px;
+    }
+
+    .logo img {
+        max-width: 95px;
+    }
+
+    .hamburguer {
+        width: 32px;
+        height: 32px;
+    }
+
+    body {
+        padding-top: 60px;
+        background-size: cover;
+    }
+
+    .menu {
+        width: 180px;
+    }
+
+    .menu-item {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    #rodape {
+        padding: 15px 10px;
+    }
+
+    .logo-footer {
+        width: 80px;
+    }
+
+    .icons-footer img {
+        width: 22px;
+    }
+}
