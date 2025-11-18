@@ -75,10 +75,9 @@ main{
 }
 
 .menu {
-    position: absolute;
-    top: 36px;
-    left: 85.1%;
-    transform: translateX(-50%);
+    position: fixed;
+    top: 54px;
+    right: calc((100% - 90%) / 2);
     width: 300px;
     max-height: 100px;
     background: linear-gradient(180deg, #2a65b8 0%, #1f4d8f 100%);
@@ -88,12 +87,13 @@ main{
     border-radius: 15px;
 }
 
+
 .menu.active {
     max-height: 400px;
 }
 
 .menu-content {
-    padding: 105px 0 40px 0;
+    padding: 85px 0 40px 0;
     opacity: 0;
     transform: translateY(-20px);
     transition: all 0.4s ease 0.2s;
