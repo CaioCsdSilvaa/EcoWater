@@ -75,7 +75,7 @@ main{
 }
 
 .menu {
-    position: fixed;
+    position: absolute;
     top: 36px;
     right: calc((100% - 90%) / 2);
     width: 300px;
