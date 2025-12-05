@@ -569,97 +569,53 @@ a{
    CELULAR — até 768px
    ========================================================= */
 @media (max-width: 768px) {
-
-    /* Header */
-    .cabecalho {
-        width: 92%;
-        padding: 15px;
-        border-radius: 12px;
-    }
-
-    #headerLinks {
-        display: none;  /* usa só o menu hamburguer */
-    }
-
-    .hamburguer {
-        width: 32px;
-        height: 32px;
-    }
-
-    .menu {
-        right: 20px !important;
-        width: 240px;
-        top: 70px;
-    }
-
-    .menu-item {
-        font-size: 1.1rem;
-        padding: 1.2rem 1.8rem;
-    }
-
-    /* Imagem principal */
-    .imagem-principal {
-        height: 55vh;
-    }
-
-    /* Layout principal */
-    .centro-pagina {
-        flex-direction: column;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        max-width: 95%;
-        gap: 40px;
+        padding: 10px 20px;
     }
 
-    #mapa {
-        width: 100%;
-        max-width: 480px;
+    .logo {
+        width: 120px;   
     }
 
-    /* Bloco "mais vistos" */
-    .blocoLateral {
-        width: 90%;
-        margin-top: 10px;
+    
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        z-index: 2000;
     }
 
-    .blocoLateral li:hover {
-        font-size: 18px; /* evita quebrar */
+    
+    nav ul {
+        display: none;
     }
 
-    /* Botões */
-    .botões {
-        width: 90%;
-        align-items: center;
+   
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -300px; 
+        width: 250px;
+        height: 100vh;
+        background: #111;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+        z-index: 1500;
     }
 
-    .botões button {
-        width: 90%;
-        font-size: 15px;
+    .side-menu.active {
+        right: 0;
     }
 
-    /* Título */
-    #titulo {
-        font-size: 46px;
-    }
-
-    /* Texto */
-    #paragrafo {
-        font-size: 15px;
-        margin: 30px 20px;
-    }
-
-    /* Footer */
-    #rodape {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        padding: 20px 10px;
-    }
-
-    .icons-footer {
-        justify-content: center;
+    .side-menu a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        color: white;
     }
 }
-
 
 /* =========================================================
    CELULAR PEQUENO — até 480px
